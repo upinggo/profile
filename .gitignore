@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Production build
+.next/
+out/
+
+# Environment variables
+.env.local
+.env.production.local
+.env.development.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# OS generated files
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Testing
+__tests__/__snapshots__
+coverage/
+.nyc_output
+
+# Logs
+logs
+*.log
+
+# Build outputs
+dist/
+build/
