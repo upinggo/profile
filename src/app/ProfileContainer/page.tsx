@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from '../styles/page.module.css';
-import AiProfileCard from '../components/AiProfileCard';
-import { envFetch } from '../../utils/HelperUtils';
-import Navigation from '@/components/common/Navigation';
+import styles from '@/app/styles/page.module.css';
+import AiProfileCard from '@/components/AiProfileCard';
+import { envFetch } from '@/utils/HelperUtils';
+import Navigation from 'src/components/common/Navigation';
 
 interface ProfileData {
   name: string;

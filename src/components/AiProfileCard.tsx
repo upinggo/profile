@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../styles/page.module.css';
+import styles from '@/app/styles/page.module.css';
 
 interface AiProfileProps {
   id: string;
