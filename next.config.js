@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'export', // This enables static export for GitHub Pages
   images: {
-    domains: ['avatars.githubusercontent.com', 'images.unsplash.com'], // Add any image domains you'll use
+    unoptimized: true, // Images must be unoptimized for static export
   },
 };
 

@@ -6,19 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "npx serve out"
   },
   "dependencies": {
+    "next": "^14.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^14.0.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "@types/react": "^18.2.37",
     "@types/node": "^20.10.3",
+    "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "eslint": "^8.53.0",
-    "eslint-config-next": "^14.0.0"
+    "eslint-config-next": "^14.0.0",
+    "serve": "^14.2.5",
+    "typescript": "^5.2.2"
   }
 }
