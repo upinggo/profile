@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import styles from './styles/page.module.css';
 import AiProfileCard from './components/AiProfileCard';
-import { profileData as serverProfileData } from './api/profile/route';
+import { profileData as serverProfileData } from './lib/profileData';
 import { isDevelopment } from './utils/HelperUtils';
 
 interface ProfileData {
