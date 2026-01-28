@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import styles from '../styles/page.module.css';
 import AiProfileCard from '../components/AiProfileCard';
 import { envFetch } from '../../utils/HelperUtils';
+import Navigation from '@/components/common/Navigation';
 
 interface ProfileData {
   name: string;
@@ -28,12 +28,6 @@ export default function ProfileContainer() {
     aiProfiles: []
   });
 
-  const router = useRouter();
-
-  const handleAvatarClick = () => {
-    router.push('/pages');
-  };
-
   useEffect(() => {
     // Fetch profile data from API
     const fetchProfileData = async () => {
@@ -51,12 +45,13 @@ export default function ProfileContainer() {
 
   return (
       <div className={styles.profileContainer}>
-        <img 
+        <Navigation path="/pages">
+          <img 
           src={profileData.avatar} 
           alt={`${profileData.name}'s avatar`} 
           className={styles.avatar}
-          onClick={handleAvatarClick}
         />
+        </Navigation>
         <h1 className={styles.title}>{profileData.name}</h1>
         <h2 className={styles.role}>{profileData.role}</h2>
         <p className={styles.bio}>{profileData.bio}</p>
