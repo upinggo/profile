@@ -1,11 +1,11 @@
-import './styles/globals.css';
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Profile App',
+  title: 'Neil Profile',
   description: 'A profile page built with Next.js and React',
 };
 

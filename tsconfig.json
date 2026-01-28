@@ -21,9 +21,10 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"],
+      "@/components/*": ["src/app/components/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/styles/*": ["src/app/styles/*"]
+      "@/styles/*": ["src/app/styles/*"],
+      "@/pages/*": ["src/app/pages/*"]
     },
     "strictNullChecks": true
   },
