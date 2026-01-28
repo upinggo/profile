@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Sample data - in a real app this would come from a database
-let profileData = {
+export const profileData = {
   id: '1',
   name: 'Neil Shen',
   role: 'AI Developer',

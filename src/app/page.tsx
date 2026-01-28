@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import styles from './styles/page.module.css';
 import AiProfileCard from './components/AiProfileCard';
+import { profileData as serverProfileData } from './api/profile/route';
+import { isDevelopment } from './utils/HelperUtils';
 
 interface ProfileData {
   name: string;
@@ -29,12 +31,15 @@ export default function Home() {
   useEffect(() => {
     // Fetch profile data from API
     const fetchProfileData = async () => {
+      if(isDevelopment) {
       try {
         const response = await fetch('/api/profile');
         const data = await response.json();
         setProfileData(data);
       } catch (error) {
         console.error('Error fetching profile data:', error);
+      }}else{
+        setProfileData(serverProfileData);
       }
     };
 
