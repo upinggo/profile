@@ -1,12 +1,11 @@
-export const isDevelopment = process.env.NODE_ENV === 'development';
-import { routeDataMap } from "@/app/api/route";
+import routeDataMap from "./ROUTE_DATA_MAP";
 
-const mockdataMap: { [key: string]: any } = routeDataMap;
+export const isDevelopment = process.env.NODE_ENV === 'development';
 export const envFetch: typeof fetch = async (input: RequestInfo | URL, init?: RequestInit) => {
     // In production, short-circuit known API calls to local data
     if (!isDevelopment) {
         const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : '';
-        const mockData = mockdataMap[url];
+        const mockData = routeDataMap[url]; // Replace with your actual data
         if (mockData) {
             return new Response(JSON.stringify(mockData), {
                 status: 200,

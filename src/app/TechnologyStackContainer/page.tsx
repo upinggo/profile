@@ -1,3 +1,4 @@
+'use client';
 // technology stack page
 import { useState, useEffect } from 'react';
 import styles from '@/app/styles/page.module.css';

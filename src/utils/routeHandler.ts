@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { profileData } from '../../data/prefillData';
-export const routeDataMap: Record<string, any> = {
-    '/api/profile': profileData,
-}
+import routeDataMap from './ROUTE_DATA_MAP';
+
 const getRequestPathData = (request: NextRequest) => {
     const path = request.nextUrl.pathname;
     return routeDataMap[path] || {};
 }
+
+
+
 // Sample data - in a real app this would come from a database
-// `profileData` is shared from app/lib, not exported here to comply with Next.js route types.
 
 export async function GET(request: NextRequest) {
     try {

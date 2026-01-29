@@ -1,2 +1,2 @@
-import { GET, PUT } from '../route';
+import { GET, PUT } from '@/utils/routeHandler';
 export { GET, PUT };
