@@ -45,7 +45,7 @@ export default function ProfileContainer() {
 
   return (
       <div className={styles.profileContainer}>
-        <Navigation path="/pages">
+        <Navigation path="https://github.com/upinggo">
           <img 
           src={profileData.avatar} 
           alt={`${profileData.name}'s avatar`} 
