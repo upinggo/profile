@@ -73,7 +73,7 @@ export default function TechnologyStackContainer() {
       <div className={styles.navigationSection}>
         <Navigation path="/">
           <button className={styles.navButton}>
-            Home <span className={styles.buttonArrow}>←</span>
+            <span className={styles.buttonArrow}>←</span> Home
           </button>
         </Navigation>
         <Navigation path="/Blog">
