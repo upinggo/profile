@@ -76,9 +76,9 @@ export default function TechnologyStackContainer() {
             Home <span className={styles.buttonArrow}>←</span>
           </button>
         </Navigation>
-        <Navigation path="https://github.com/upinggo/profile">
+        <Navigation path="/Blog">
           <button className={styles.navButton}>
-            Repository <span className={styles.buttonArrow}>→</span>
+            Blog <span className={styles.buttonArrow}>→</span>
           </button>
         </Navigation>
       </div>
