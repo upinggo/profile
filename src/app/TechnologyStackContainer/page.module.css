@@ -1,0 +1,148 @@
+.techStackContainer {
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.techStackContent {
+  margin-bottom: 2rem;
+}
+
+.techStackContainer .sectionTitle {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+  position: relative;
+  display: inline-block;
+}
+
+.techStackContainer .sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4e73df, #3a5fc5);
+  border-radius: 2px;
+}
+
+.description {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 1rem 0 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.techCard {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.techCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #4e73df;
+  background: #fff;
+}
+
+.techIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.techInitial {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.techInfo {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.techName {
+  font-size: 1.3rem;
+  color: #212529;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.techDescription {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.loadingText {
+  color: #6c757d;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+.navigationSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.navButton {
+  background: #4e73df;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navButton:hover {
+  background: #224abe;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+}
+
+.buttonArrow {
+  font-size: 1.2rem;
+}

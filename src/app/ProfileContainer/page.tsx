@@ -69,6 +69,9 @@ export default function ProfileContainer() {
               />
             ))}
           </div>
+          <Navigation path="/TechnologyStackContainer">
+            View Technology Stack
+          </Navigation>
         </div>
       </div>
   );

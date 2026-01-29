@@ -1,12 +1,25 @@
 'use client';
 // technology stack page
 import { useState, useEffect } from 'react';
-import styles from '@/app/styles/page.module.css';
+import styles from './page.module.css';
 import Navigation from 'src/components/common/Navigation';
 import { envFetch } from '@/utils/HelperUtils';
 
+interface TechCategory {
+  id: string;
+  name: string;
+  description: string;
+  children: TechItem[];
+}
+
+interface TechItem {
+  id: string;
+  name: string;
+  description: string;
+}
+
 export default function TechnologyStackContainer() {
-  const [techStack, setTechStack] = useState<string[]>([]);
+  const [techStack, setTechStack] = useState<TechCategory[]>([]);
 
   useEffect(() => {
     // Fetch technology stack data from API
@@ -23,17 +36,52 @@ export default function TechnologyStackContainer() {
     fetchTechStack();
   }, []);
 
+  // Extract all tech items from all categories
+  const getAllTechItems = (): TechItem[] => {
+    return techStack.flatMap(category => 
+      category.children as TechItem[] || []
+    );
+  };
+
+  const allTechItems = getAllTechItems();
+
   return (
     <div className={styles.techStackContainer}>
-      <h2 className={styles.sectionTitle}>Technology Stack</h2>
-      <ul className={styles.techList}>
-        {techStack.map((tech, index) => (
-          <li key={index} className={styles.techItem}>{tech}</li>
-        ))}
-      </ul>
-      <Navigation path="/">
-        <button className={styles.backButton}>Back to Home</button>
-      </Navigation>
+      <div className={styles.techStackContent}>
+        <h2 className={styles.sectionTitle}>Technology Stack</h2>
+        <p className={styles.description}>Technologies and tools I use to build amazing applications</p>
+        
+        {allTechItems.length > 0 ? (
+          <div className={styles.techGrid}>
+            {allTechItems.map((tech, index) => (
+              <div key={`${tech.id}-${index}`} className={styles.techCard}>
+                <div className={styles.techIcon}>
+                  <span className={styles.techInitial}>{tech.name.charAt(0)}</span>
+                </div>
+                <div className={styles.techInfo}>
+                  <h3 className={styles.techName}>{tech.name}</h3>
+                  <p className={styles.techDescription}>{tech.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className={styles.loadingText}>Loading technologies...</p>
+        )}
+      </div>
+      
+      <div className={styles.navigationSection}>
+        <Navigation path="/">
+          <button className={styles.navButton}>
+            <span className={styles.buttonArrow}>←</span> Back to Home
+          </button>
+        </Navigation>
+        <Navigation path="/ProfileContainer">
+          <button className={styles.navButton}>
+            View Profile <span className={styles.buttonArrow}>→</span>
+          </button>
+        </Navigation>
+      </div>
     </div>
   );
 }
