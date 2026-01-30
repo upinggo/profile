@@ -72,6 +72,14 @@ export default function ProfileContainer() {
           <Navigation path="/TechnologyStackContainer">
             View Technology Stack
           </Navigation>
+          <br></br>
+          <Navigation path="https://leetcode.com/u/uping_s/">
+            Go to the "LeeCode" Challenges
+          </Navigation>
+          <br></br>
+          <Navigation path="https://leetcode.cn/u/wo-shi-dou-bi-ni-xin-ma/">
+            Go to the "力扣" Challenges
+          </Navigation>
         </div>
       </div>
   );

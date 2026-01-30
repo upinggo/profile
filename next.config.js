@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true, // Images must be unoptimized for static export
   },
+   compiler: {
+    styledComponents: true,
+    removeConsole: process.env.NODE_ENV === 'development' ? true : false,
+  }
 };
 
 module.exports = nextConfig;
