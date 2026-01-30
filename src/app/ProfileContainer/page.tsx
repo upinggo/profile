@@ -22,7 +22,7 @@ interface ProfileData {
 export default function ProfileContainer() {
   const [profileData, setProfileData] = useState<ProfileData>({
     name: 'Loading...',
-    role: 'AI Developer',
+    role: 'Developer',
     bio: 'Loading profile data...',
     avatar: '',
     aiProfiles: []

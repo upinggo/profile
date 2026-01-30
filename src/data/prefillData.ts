@@ -1,7 +1,7 @@
 export const profileData = {
     id: '1',
     name: 'Neil Shen',
-    role: 'AI Developer',
+    role: 'Developer',
     bio: 'Passionate about creating innovative AI solutions',
     avatar: 'https://avatars.githubusercontent.com/u/25785956?v=4',
     aiProfiles: [
