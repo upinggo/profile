@@ -1,11 +1,129 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import styles from './page.module.css';
 import Navigation from "@/components/common/Navigation";
+
+ // This is a placeholder - in a real app you would fetch from an actual markdown file
+        // For example: const response = await fetch('/path/to/markdown/file.md');
+        // const markdownText = await response.text();
+        
+        // Using sample markdown for demonstration purposes
+        const sampleMarkdown = `
+# Welcome to My Blog
+
+This is a sample blog post demonstrating how markdown content will be rendered on this page.
+
+## About This Blog
+
+This blog features my thoughts and insights on various topics. Each post is written in markdown format and beautifully rendered for your reading pleasure.
+
+## Sample Content
+
+Here's an example of different markdown elements:
+
+### Headers
+Headers from H1 to H6 are supported and styled appropriately.
+
+### Emphasis
+You can make text *italic* or **bold** or ***both***.
+
+### Lists
+
+Unordered List:
+- Item 1
+- Item 2
+  - Nested item
+  - Another nested item
+- Item 3
+
+Ordered List:
+1. First item
+2. Second item
+   1. Nested ordered item
+3. Third item
+
+### Code
+
+Inline \`code\` can be included like this.
+
+\`\`\`javascript
+// Example of a code block
+function helloWorld() {
+  console.log("Hello, world!");
+}
+\`\`\`
+
+### Links and Images
+
+[Example Link](https://example.com)
+
+![Example Image](https://placehold.co/600x400.png?text=Sample+Image)
+
+### Blockquotes
+
+> This is a blockquote
+> It can span multiple lines
+> And contain multiple paragraphs
+
+### Horizontal Rule
+
+---
+
+That's a basic overview of the markdown rendering capabilities!
+        `;
+
 export default function Blog() {
+  const [markdownContent, setMarkdownContent] = useState<string>(sampleMarkdown);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchMarkdown = async () => {
+      try {
+        // Fetch the markdown file from the public folder
+        const response = await fetch('/Blog/README.md');
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch markdown: ${response.status} ${response.statusText}`);
+        }
+        
+        const markdownText = await response.text();
+        setMarkdownContent(markdownText);
+        setLoading(false);
+      } catch (err) {
+        setError('Failed to load blog content');
+        setLoading(false);
+        console.error(err);
+      }
+    };
+
+    fetchMarkdown();
+  }, []);
+
   return (
-    <Navigation path="/">
-    do in process:
-    <h1>in the further, I will visualize the markdown files for the blog</h1>
-    <p>all the blog content comes from https://github.com/upinggo/shenyl.github.com/blob/gh-pages/readme.md</p>
-    <p>Current working directory: {process.cwd()}</p>
-    </Navigation>
+    <div className={styles.blogContainer}>
+      <Navigation path="/">
+        <button className={styles.backButton}>← Back to Home</button>
+      </Navigation>
+      
+      <header className={styles.blogHeader}>
+        <h1 className={styles.blogTitle}>My Blog</h1>
+        <p className={styles.blogSubtitle}>Thoughts, stories and ideas</p>
+      </header>
+      
+      <main className={styles.markdownContent}>
+        {loading ? (
+          <p>Loading blog content...</p>
+        ) : error ? (
+          <p className={styles.noMarkdownMessage}>{error}</p>
+        ) : markdownContent ? (
+          <ReactMarkdown>{markdownContent}</ReactMarkdown>
+        ) : (
+          <p className={styles.noMarkdownMessage}>No blog content available</p>
+        )}
+      </main>
+    </div>
   );
 }

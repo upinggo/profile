@@ -1,0 +1,142 @@
+.blogContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  color: #333;
+}
+
+.blogHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.blogTitle {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.blogSubtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.markdownContent {
+  overflow-wrap: break-word;
+}
+
+.markdownContent h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.markdownContent h2 {
+  font-size: 1.7rem;
+  color: #34495e;
+  margin: 1.4rem 0 0.8rem;
+}
+
+.markdownContent h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin: 1.2rem 0 0.6rem;
+}
+
+.markdownContent p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.markdownContent a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.markdownContent a:hover {
+  text-decoration: underline;
+}
+
+.markdownContent ul, 
+.markdownContent ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.markdownContent li {
+  margin: 0.5rem 0;
+}
+
+.markdownContent blockquote {
+  border-left: 4px solid #3498db;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background-color: #f8f9fa;
+  color: #555;
+  font-style: italic;
+}
+
+.markdownContent code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  color: #e74c3c;
+}
+
+.markdownContent pre {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.2rem;
+  border-radius: 6px;
+  overflow: auto;
+  margin: 1.5rem 0;
+}
+
+.markdownContent pre code {
+  background: none;
+  color: #ecf0f1;
+  padding: 0;
+}
+
+.markdownContent img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.noMarkdownMessage {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 2rem;
+}
