@@ -6,7 +6,7 @@ const nextConfig = {
   },
    compiler: {
     styledComponents: true,
-    removeConsole: process.env.NODE_ENV === 'development' ? true : false,
+    // removeConsole: process.env.NODE_ENV !== 'development' ? true : false,
   }
 };
 

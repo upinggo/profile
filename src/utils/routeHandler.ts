@@ -12,6 +12,7 @@ const getRequestPathData = (request: NextRequest) => {
 
 export async function GET(request: NextRequest) {
     try {
+        console.log('Fetching data for request:', request.url);
         const data = getRequestPathData(request);
         return NextResponse.json(data, { status: 200 });
     } catch (error) {
@@ -25,6 +26,7 @@ export async function GET(request: NextRequest) {
 
 export async function PUT(request: NextRequest) {
     try {
+        console.log('Updating data for request:', request.url);
         const updates = await request.json();
         const data = getRequestPathData(request);
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './page.module.css';
 import Navigation from "@/components/common/Navigation";
+import { envFetch } from '@/utils/HelperUtils';
 
  // This is a placeholder - in a real app you would fetch from an actual markdown file
         // For example: const response = await fetch('/path/to/markdown/file.md');
@@ -82,8 +83,24 @@ export default function Blog() {
   useEffect(() => {
     const fetchMarkdown = async () => {
       try {
-        // Fetch the markdown file from the public folder
-        const response = await fetch('/Blog/README.md');
+        // Try multiple possible paths for the markdown file
+        // This handles both root domain and subdirectory deployments
+        
+        // First, try the direct path (works for root domains)
+        let response = await envFetch('/Blog/README.md');
+        
+        // If that fails, it might be a subdirectory deployment (e.g., username.github.io/repo-name/)
+        if (!response.ok) {
+          // Construct path relative to the current location
+          // This handles cases where the site is deployed to a subdirectory
+          const pathParts = window.location.pathname.split('/');
+          pathParts.pop(); // Remove the current page ('blog')
+          const basePath = pathParts.join('/') || ''; // Join the remaining parts
+          
+          // Build the correct path to the asset
+          const assetPath = `${basePath}/Blog/README.md`.replace('//', '/');
+          response = await fetch(assetPath);
+        }
         
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown: ${response.status} ${response.statusText}`);
