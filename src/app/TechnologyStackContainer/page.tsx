@@ -4,22 +4,14 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import Navigation from 'src/components/common/Navigation';
 import { envFetch } from '@/utils/HelperUtils';
+import { technologies } from '../../data/prefillData';
 
-interface TechCategory {
-  id: string;
-  name: string;
-  description: string;
-  children: TechItem[];
-}
-
-interface TechItem {
-  id: string;
-  name: string;
-  description: string;
-}
+type TechCategory = typeof technologies[number];
+type TechItem = TechCategory['children'][number];
 
 export default function TechnologyStackContainer() {
   const [techStack, setTechStack] = useState<TechCategory[]>([]);
+  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   useEffect(() => {
     // Fetch technology stack data from API
@@ -30,20 +22,22 @@ export default function TechnologyStackContainer() {
         setTechStack(data);
       } catch (error) {
         console.error('Error fetching technology stack:', error);
+        // Fallback to prefill data
+        setTechStack(technologies);
       }
     };
 
     fetchTechStack();
   }, []);
 
-  // Extract all tech items from all categories
-  const getAllTechItems = (): TechItem[] => {
-    return techStack.flatMap(category => 
-      category.children as TechItem[] || []
-    );
+  // Handle mouse enter/leave events for category cards
+  const handleMouseEnter = (categoryId: string) => {
+    setHoveredCategory(categoryId);
   };
 
-  const allTechItems = getAllTechItems();
+  const handleMouseLeave = () => {
+    setHoveredCategory(null);
+  };
 
   return (
     <div className={styles.techStackContainer}>
@@ -51,17 +45,44 @@ export default function TechnologyStackContainer() {
         <h2 className={styles.sectionTitle}>Technology Stack</h2>
         <p className={styles.description}>Technologies and tools I use to build amazing applications</p>
         
-        {allTechItems.length > 0 ? (
-          <div className={styles.techGrid}>
-            {allTechItems.map((tech, index) => (
-              <div key={`${tech.id}-${index}`} className={styles.techCard}>
-                <div className={styles.techIcon}>
-                  <span className={styles.techInitial}>{tech.name.charAt(0)}</span>
+        {techStack.length > 0 ? (
+          <div className={styles.categoriesContainer}>
+            {techStack.map((category) => (
+              <div 
+                key={category.id}
+                className={`${styles.categoryCard} ${hoveredCategory === category.id ? styles.categoryCardHovered : ''}`}
+                onMouseEnter={() => handleMouseEnter(category.id)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className={styles.categoryHeader}>
+                  <div className={styles.categoryIcon}>
+                    <span className={styles.categoryInitial}>{category.name.charAt(0)}</span>
+                  </div>
+                  <div className={styles.categoryInfo}>
+                    <h3 className={styles.categoryName}>{category.name}</h3>
+                    <p className={styles.categoryDescription}>{category.description}</p>
+                  </div>
                 </div>
-                <div className={styles.techInfo}>
-                  <h3 className={styles.techName}>{tech.name}</h3>
-                  <p className={styles.techDescription}>{tech.description}</p>
-                </div>
+                
+                {/* Child items dropdown */}
+                {hoveredCategory === category.id && category.children && category.children.length > 0 && (
+                  <div className={styles.childItemsDropdown}>
+                    <div className={styles.dropdownArrow}></div>
+                    <div className={styles.childItemsGrid}>
+                      {category.children.map((item: TechItem) => (
+                        <div key={item.id} className={styles.childItemCard}>
+                          <div className={styles.childItemIcon}>
+                            <span className={styles.childItemInitial}>{item.name.charAt(0)}</span>
+                          </div>
+                          <div className={styles.childItemInfo}>
+                            <h4 className={styles.childItemName}>{item.name}</h4>
+                            <p className={styles.childItemDescription}>{item.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>

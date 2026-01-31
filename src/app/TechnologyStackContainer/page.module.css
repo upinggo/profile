@@ -7,6 +7,7 @@
   padding: 2.5rem;
   text-align: center;
   margin: 1rem auto;
+  position: relative;
 }
 
 .techStackContent {
@@ -42,74 +43,186 @@
   margin-right: auto;
 }
 
-.techGrid {
+/* Categories container */
+.categoriesContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
   width: 100%;
   margin: 0 auto;
 }
 
-.techCard {
+/* Category card styles */
+.categoryCard {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  position: relative;
+  cursor: pointer;
+  min-height: 120px;
 }
 
-.techCard:hover {
+.categoryCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-color: #4e73df;
   background: #fff;
 }
 
-.techIcon {
-  width: 60px;
-  height: 60px;
+.categoryCardHovered {
+  z-index: 10;
+  position: relative;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.categoryIcon {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: linear-gradient(135deg, #4e73df, #224abe);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
-.techInitial {
-  font-size: 1.5rem;
+.categoryInitial {
+  font-size: 1.3rem;
   font-weight: bold;
   color: white;
 }
 
-.techInfo {
-  text-align: center;
+.categoryInfo {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.techName {
-  font-size: 1.3rem;
+.categoryName {
+  font-size: 1.4rem;
   color: #212529;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.3rem;
   font-weight: 600;
 }
 
-.techDescription {
+.categoryDescription {
   font-size: 0.95rem;
   color: #6c757d;
   margin: 0;
   line-height: 1.4;
 }
 
+/* Child items dropdown */
+.childItemsDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #4e73df;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  overflow: hidden;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownArrow {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #4e73df;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+  z-index: 21;
+}
+
+.childItemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+}
+
+/* Child item card styles */
+.childItemCard {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.childItemCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #4e73df;
+  background: #fff;
+}
+
+.childItemIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c757d, #495057);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.childItemInitial {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.childItemInfo {
+  text-align: center;
+}
+
+.childItemName {
+  font-size: 1.1rem;
+  color: #212529;
+  margin: 0 0 0.3rem;
+  font-weight: 500;
+}
+
+.childItemDescription {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Loading and navigation styles remain the same */
 .loadingText {
   color: #6c757d;
   font-style: italic;
@@ -145,4 +258,20 @@
 
 .buttonArrow {
   font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .categoriesContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .childItemsGrid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .categoryCard {
+    min-height: auto;
+  }
 }
