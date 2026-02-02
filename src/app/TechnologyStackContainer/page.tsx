@@ -70,7 +70,7 @@ export default function TechnologyStackContainer() {
                     <div className={styles.dropdownArrow}></div>
                     <div className={styles.childItemsGrid}>
                       {category.children.map((item: TechItem) => (
-                        <div key={item.id} className={styles.childItemCard}>
+                        <Navigation key={item.id} className={styles.childItemCard} path={`/TechnologyStackContainer/${category.id}/${item.id}`}>
                           <div className={styles.childItemIcon}>
                             <span className={styles.childItemInitial}>{item.name.charAt(0)}</span>
                           </div>
@@ -78,7 +78,7 @@ export default function TechnologyStackContainer() {
                             <h4 className={styles.childItemName}>{item.name}</h4>
                             <p className={styles.childItemDescription}>{item.description}</p>
                           </div>
-                        </div>
+                        </Navigation>
                       ))}
                     </div>
                   </div>

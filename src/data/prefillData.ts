@@ -33,18 +33,18 @@ export const technologies = [
         description: 'Technologies for building user interfaces',
         children: [
             {
-                id: '1',
+                id: 'js',
                 name: 'JavaScript',
                 description: 'A versatile language for web and mobile development',
                 children: []
             },
             {
-                id: '2',
+                id: 'react',
                 name: 'React',
                 description: 'A popular JavaScript library for building user interfaces'
             },
             {
-                id: '3',
+                id: 'vue',
                 name: 'Vue.js',
                 description: 'A progressive framework for building user interfaces'
             }
@@ -56,17 +56,17 @@ export const technologies = [
         description: 'Technologies for server-side development',
         children: [
             {
-                id: '1',
+                id: 'nodejs',
                 name: 'Node.js',
                 description: 'A JavaScript runtime for server-side development'
             },
             {
-                id: '2',
+                id: 'express',
                 name: 'Express.js',
                 description: 'A web application framework for Node.js'
             },
             {
-                id: '3',
+                id: 'django',
                 name: 'Django',
                 description: 'A high-level Python web framework'
             }
@@ -78,17 +78,17 @@ export const technologies = [
         description: 'Technologies for deployment and infrastructure management',
         children: [
             {
-                id: '1',
+                id: 'docker',
                 name: 'Docker',
                 description: 'Containerization platform for application deployment'
             },
             {
-                id: '2',
+                id: 'k8s',
                 name: 'Kubernetes',
                 description: 'Container orchestration platform'
             },
             {
-                id: '3',
+                id: 'aws',
                 name: 'AWS',
                 description: 'Cloud computing services'
             }

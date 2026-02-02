@@ -4,15 +4,17 @@ import { useState } from "react";
 
 export default function Navigation({
   children,
-  path
+  path,
+  ...props
 }: {
   children: React.ReactNode;
   path: string;
+  [key: string]: any;
 }) {
       const router = useRouter();
     
   return (
-    <a onClick={()=>router.push(path)} style={{ cursor: 'pointer' }}>
+    <a {...props} onClick={()=>router.push(path)} style={{ cursor: 'pointer' }}>
     {children}
     </a>
   );
