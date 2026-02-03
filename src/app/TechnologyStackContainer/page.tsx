@@ -8,7 +8,28 @@ import { technologies } from '../../data/prefillData';
 
 type TechCategory = typeof technologies[number];
 type TechItem = TechCategory['children'][number];
-
+function ChildItemCard({ category }: { category: TechCategory }) {
+  if (category.children?.length > 0) {
+    return (
+      <div className={styles.childItemsDropdown}>
+        <div className={styles.dropdownArrow}></div>
+        <div className={styles.childItemsGrid}>
+          {category.children.map((item: TechItem) => (
+            <Navigation key={item.id} className={styles.childItemCard} path={`/TechnologyStackContainer/${category.id}/${item.id}`}>
+              <div className={styles.childItemIcon}>
+                <span className={styles.childItemInitial}>{item.name.charAt(0)}</span>
+              </div>
+              <div className={styles.childItemInfo}>
+                <h4 className={styles.childItemName}>{item.name}</h4>
+                <p className={styles.childItemDescription}>{item.description}</p>
+              </div>
+            </Navigation>
+          ))}
+        </div>
+      </div>
+    )
+  }
+}
 export default function TechnologyStackContainer() {
   const [techStack, setTechStack] = useState<TechCategory[]>([]);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
@@ -44,11 +65,11 @@ export default function TechnologyStackContainer() {
       <div className={styles.techStackContent}>
         <h2 className={styles.sectionTitle}>Technology Stack</h2>
         <p className={styles.description}>Technologies and tools I use to build amazing applications</p>
-        
+
         {techStack.length > 0 ? (
           <div className={styles.categoriesContainer}>
             {techStack.map((category) => (
-              <div 
+              <div
                 key={category.id}
                 className={`${styles.categoryCard} ${hoveredCategory === category.id ? styles.categoryCardHovered : ''}`}
                 onMouseEnter={() => handleMouseEnter(category.id)}
@@ -63,26 +84,9 @@ export default function TechnologyStackContainer() {
                     <p className={styles.categoryDescription}>{category.description}</p>
                   </div>
                 </div>
-                
+
                 {/* Child items dropdown */}
-                {hoveredCategory === category.id && category.children && category.children.length > 0 && (
-                  <div className={styles.childItemsDropdown}>
-                    <div className={styles.dropdownArrow}></div>
-                    <div className={styles.childItemsGrid}>
-                      {category.children.map((item: TechItem) => (
-                        <Navigation key={item.id} className={styles.childItemCard} path={`/TechnologyStackContainer/${category.id}/${item.id}`}>
-                          <div className={styles.childItemIcon}>
-                            <span className={styles.childItemInitial}>{item.name.charAt(0)}</span>
-                          </div>
-                          <div className={styles.childItemInfo}>
-                            <h4 className={styles.childItemName}>{item.name}</h4>
-                            <p className={styles.childItemDescription}>{item.description}</p>
-                          </div>
-                        </Navigation>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                (hoveredCategory === category.id && <ChildItemCard category={category} />)
               </div>
             ))}
           </div>
@@ -90,7 +94,7 @@ export default function TechnologyStackContainer() {
           <p className={styles.loadingText}>Loading technologies...</p>
         )}
       </div>
-      
+
       <div className={styles.navigationSection}>
         <Navigation path="/">
           <button className={styles.navButton}>
