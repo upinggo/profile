@@ -21,10 +21,15 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
       "@/components/*": ["src/components/*"],
       "@/utils/*": ["src/utils/*"],
       "@/styles/*": ["src/app/styles/*"],
-      "@/app/*": ["src/app/*"]
+      "@/app/*": ["src/app/*"],
+      "@/data/*": ["src/data/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/types/*": ["src/types/*"],
+      "@/constants/*": ["src/constants/*"]
     },
     "strictNullChecks": true
   },

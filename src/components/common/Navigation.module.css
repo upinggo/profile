@@ -1,0 +1,70 @@
+.navigationLink {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.navigationLink:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigationLink:focus {
+  outline: 2px solid #4e73df;
+  outline-offset: 2px;
+}
+
+/* Base styles that can be overridden by parent components */
+.navigationLink.navLink {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+  color: #495057;
+  font-weight: 500;
+}
+
+.navigationLink.navLink:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+  color: #212529;
+}
+
+/* Button-like navigation styles */
+.navigationLink.navButton {
+  background: #4e73df;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(78, 115, 223, 0.2);
+}
+
+.navigationLink.navButton:hover {
+  background: #224abe;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+  color: white;
+}
+
+/* External link styles */
+.navigationLink[rel*="noopener"] {
+  position: relative;
+}
+
+.navigationLink[rel*="noopener"]::after {
+  content: "↗";
+  margin-left: 0.3rem;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
