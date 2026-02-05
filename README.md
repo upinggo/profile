@@ -153,7 +153,6 @@ BREAKING CHANGE: User v1 endpoints have been removed"
 - `npm run test:watch` - Run tests in watch mode
 - `npm run test:coverage` - Generate test coverage
 - `npm run type-check` - Run TypeScript type checking
-- `npm run semantic-release` - Run semantic release locally
 
 ## 🎨 Styling Approach
 

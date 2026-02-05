@@ -7,11 +7,10 @@
     "build": "next build",
     "lint": "next lint",
     "preview": "npx serve out",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "type-check": "tsc --noEmit",
-    "semantic-release": "semantic-release"
+    "test": "npx jest",
+    "test:watch": "npx jest --watch",
+    "test:coverage": "npx jest --coverage",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^14.0.0",
