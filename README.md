@@ -13,6 +13,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Re
 - **Loading States**: Skeleton loading screens for better UX
 - **SEO Optimized**: Proper meta tags, Open Graph, and Twitter cards
 - **Testing Ready**: Jest and React Testing Library setup with sample tests
+- **Automated Releases**: Semantic Release for automatic versioning and changelog generation
 
 ## 🛠️ Tech Stack
 
@@ -22,6 +23,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Re
 - **Testing**: Jest, React Testing Library
 - **Linting**: ESLint with TypeScript plugin
 - **Deployment**: GitHub Pages ready
+- **Release Automation**: Semantic Release with Conventional Commits
 
 ## 📁 Project Structure
 
@@ -95,6 +97,53 @@ npm run build
 npm run preview
 ```
 
+## 🚀 Automated Releases
+
+This project uses **Semantic Release** for automatic versioning and release management:
+
+### How it works
+- Commits following [Conventional Commits](https://www.conventionalcommits.org/) format trigger automated releases
+- Version numbers are bumped automatically based on commit types
+- Changelog is generated automatically
+- GitHub releases are created with release notes
+- Git tags are created for each release
+
+### Commit Message Format
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+**Types:**
+- `feat`: New features (creates minor version bump)
+- `fix`: Bug fixes (creates patch version bump)
+- `BREAKING CHANGE`: Breaking changes (creates major version bump)
+- `docs`: Documentation changes
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `perf`: Performance improvements
+- `test`: Test changes
+- `build`: Build system changes
+- `ci`: CI configuration changes
+- `chore`: Maintenance tasks
+
+### Example Commits
+```bash
+# Feature - creates minor version bump (1.0.0 → 1.1.0)
+git commit -m "feat(auth): add user login functionality"
+
+# Fix - creates patch version bump (1.0.0 → 1.0.1)
+git commit -m "fix(api): resolve user creation validation error"
+
+# Breaking Change - creates major version bump (1.0.0 → 2.0.0)
+git commit -m "feat!: remove deprecated user endpoints
+
+BREAKING CHANGE: User v1 endpoints have been removed"
+```
+
 ## 🔧 Available Scripts
 
 - `npm run dev` - Start development server
@@ -104,6 +153,7 @@ npm run preview
 - `npm run test:watch` - Run tests in watch mode
 - `npm run test:coverage` - Generate test coverage
 - `npm run type-check` - Run TypeScript type checking
+- `npm run semantic-release` - Run semantic release locally
 
 ## 🎨 Styling Approach
 
@@ -152,11 +202,13 @@ The application is fully responsive and tested on:
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+Key points:
+1. Follow [Conventional Commits](https://www.conventionalcommits.org/) format
+2. Ensure all tests pass before submitting PR
+3. Update documentation as needed
+4. Follow the existing code style
 
 ## 📄 License
 

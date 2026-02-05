@@ -8,6 +8,11 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    # Skip deployment if it's a release commit
+    paths-ignore:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'CHANGELOG.md'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
