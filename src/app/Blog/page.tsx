@@ -83,7 +83,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchMarkdown = async () => {
       try {
-        let response = await envFetch('/Blog/README.md');
+        const response = await envFetch('/Blog/README.md');
         
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown: ${response.status} ${response.statusText}`);
