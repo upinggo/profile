@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/upinggo/profile/compare/v1.1.0...v1.1.1) (2026-02-06)
+
+
+### Bug Fixes
+
+* update GitHub Pages asset URL construction for subdirectory deployment ([9ae33c8](https://github.com/upinggo/profile/commit/9ae33c85327115d81b08e857774250ffaa7b8afc))
+
 # [1.1.0](https://github.com/upinggo/profile/compare/v1.0.0...v1.1.0) (2026-02-06)
 
 
