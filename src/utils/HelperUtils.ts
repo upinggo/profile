@@ -18,7 +18,7 @@ export const envFetch: typeof fetch = async (input: RequestInfo | URL, init?: Re
         if (url.startsWith('/') && (url.endsWith('.md') || url.endsWith('.json') || url.endsWith('.txt'))) {
             try {
                 // Build the correct path to the asset
-                const assetPath = `${getGHPagesAssetURL()}${url}`.replace('//', '/');
+                const assetPath = `${getGHPagesAssetURL()}${url}`;
                 const response = await fetch(assetPath);
                 // If successful, return the response
                 if (response.ok) {
