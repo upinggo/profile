@@ -5,15 +5,14 @@ import { ProfileData, ApiResponse } from '@/types';
 // Validation function
 function isValidProfileUpdate(data: any): data is Partial<ProfileData> {
   if (typeof data !== 'object' || data === null) return false;
-  
+
   const allowedKeys = ['name', 'role', 'bio', 'avatar', 'aiProfiles'];
   return Object.keys(data).every(key => allowedKeys.includes(key));
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
-    console.log('Fetching profile data for request:', request.url);
-    
+    // Fetching static profile data
     // Simulate some processing delay in development
     if (process.env.NODE_ENV === 'development') {
       await new Promise(resolve => setTimeout(resolve, 100));
@@ -25,7 +24,7 @@ export async function GET(request: NextRequest) {
       timestamp: new Date().toISOString()
     };
 
-    return NextResponse.json(response, { 
+    return NextResponse.json(response, {
       status: 200,
       headers: {
         'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=30'
@@ -33,7 +32,7 @@ export async function GET(request: NextRequest) {
     });
   } catch (error) {
     console.error('Error fetching profile:', error);
-    
+
     const errorResponse: ApiResponse<null> = {
       data: null,
       status: 500,
@@ -47,13 +46,12 @@ export async function GET(request: NextRequest) {
 
 export async function PUT(request: NextRequest) {
   try {
-    console.log('Updating profile data for request:', request.url);
-    
+    // Updating profile data
     const updates = await request.json();
-    
+
     if (!isValidProfileUpdate(updates)) {
       return NextResponse.json(
-        { 
+        {
           error: 'Invalid profile update data',
           status: 400,
           timestamp: new Date().toISOString()
@@ -79,7 +77,7 @@ export async function PUT(request: NextRequest) {
     return NextResponse.json(response, { status: 200 });
   } catch (error) {
     console.error('Error updating profile:', error);
-    
+
     const errorResponse: ApiResponse<null> = {
       data: null,
       status: 500,

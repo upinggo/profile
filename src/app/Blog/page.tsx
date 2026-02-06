@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './page.module.css';
 import Navigation from "@/components/common/Navigation";
-import { envFetch, githubPagesAssetURL } from '@/utils/HelperUtils';
+import { envFetch, getGHPagesAssetURL } from '@/utils/HelperUtils';
  // This is a placeholder - in a real app you would fetch from an actual markdown file
         // For example: const response = await fetch('/path/to/markdown/file.md');
         // const markdownText = await response.text();
@@ -122,7 +122,7 @@ export default function Blog() {
         ) : (
           <p className={styles.noMarkdownMessage}>No blog content available</p>
         )}
-        <Navigation path={`${githubPagesAssetURL}/finance.html`} aria-label="View iframe">AI Generation Finance Page</Navigation>
+        <Navigation path={`${getGHPagesAssetURL()}/finance.html`} aria-label="View iframe">AI Generation Finance Page</Navigation>
       </main>
     </div>
   );

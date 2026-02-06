@@ -2,8 +2,8 @@ import routeDataMap from "./ROUTE_DATA_MAP";
 
 export const isDevelopment = process.env.NODE_ENV === 'development';
 export const envFetch: typeof fetch = async (input: RequestInfo | URL, init?: RequestInit) => {
-    // In production, short-circuit known API calls to local data
-    if (!isDevelopment && process.env.isSPA === 'false') {
+    // In production (static export), short-circuit known API calls to local data
+    if (!isDevelopment) {
         const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : '';
         const mockData = routeDataMap[url]; // Replace with your actual data
         if (mockData) {
@@ -18,7 +18,7 @@ export const envFetch: typeof fetch = async (input: RequestInfo | URL, init?: Re
         if (url.startsWith('/') && (url.endsWith('.md') || url.endsWith('.json') || url.endsWith('.txt'))) {
             try {
                 // Build the correct path to the asset
-                const assetPath = `${githubPagesAssetURL}${url}`.replace('//', '/');
+                const assetPath = `${getGHPagesAssetURL()}${url}`.replace('//', '/');
                 const response = await fetch(assetPath);
                 // If successful, return the response
                 if (response.ok) {
@@ -35,15 +35,21 @@ export const envFetch: typeof fetch = async (input: RequestInfo | URL, init?: Re
 };
 
 // this function is used for GitHub Pages deployment only to fetch the static assets correctly
-export const githubPagesAssetURL = (() => {
-    if (isDevelopment) {
-        return '';
-    } else {
-        // In production, adjust for GitHub Pages subdirectory deployment
-        // Construct path relative to the current location
-        // This handles cases where the site is deployed to a subdirectory
-        const pathParts = window.location.pathname.split('/');
-        pathParts.pop();
-        return pathParts.join('/') || '';
+export const getGHPagesAssetURL = (): string => {
+    if (process.env.NEXT_PUBLIC_SITE_URL) {
+        console.log('Using NEXT_PUBLIC_SITE_URL for asset paths. Ensure this is set correctly for GitHub Pages deployment.');
+        // Using configured site URL for assets
+        return process.env.NEXT_PUBLIC_SITE_URL;
     }
-})();
+    // Guard for SSR/build getGHPagesAssetURL where window is undefined
+    if (isDevelopment || typeof window === 'undefined') {
+        return '';
+    }
+    // In production, adjust for GitHub Pages subdirectory deployment
+    // Construct path relative to the current location
+    // This handles cases where the site is deployed to a subdirectory
+    const pathParts = window.location.pathname.split('/');
+    pathParts.pop();
+    console.log('Constructed asset path for GitHub Pages deployment:', pathParts.join('/'));
+    return pathParts.join('/') || '';
+};

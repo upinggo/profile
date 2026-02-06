@@ -155,7 +155,7 @@ function TechnologyStackContent() {
   );
 }
 
-export default function TechnologyStackContainer() {
+export default function TechnologyStackContainer():JSX.Element {
   return (
     <ErrorBoundary>
       <TechnologyStackContent />
