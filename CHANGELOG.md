@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/upinggo/profile/compare/v1.0.0...v1.1.0) (2026-02-06)
+
+
+### Features
+
+* add finance dashboard page and integrate API for real-time data ([07b70d0](https://github.com/upinggo/profile/commit/07b70d0b8d8295a3d4ad8486fe7e698e08a6e0e8))
+* enhance GitHub Pages deployment and improve asset URL handling ([fce719a](https://github.com/upinggo/profile/commit/fce719a47171c88adcb9192452396f1d13a00cad))
+
 # 1.0.0 (2026-02-05)
 
 
