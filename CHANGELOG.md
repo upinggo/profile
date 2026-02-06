@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/upinggo/profile/compare/v1.1.2...v1.1.3) (2026-02-06)
+
+
+### Bug Fixes
+
+* add Vercel environment check to envFetch for correct fetch handling ([634f18c](https://github.com/upinggo/profile/commit/634f18ce51cfc40866916fad7fa43497868485b7))
+
 ## [1.1.2](https://github.com/upinggo/profile/compare/v1.1.1...v1.1.2) (2026-02-06)
 
 
