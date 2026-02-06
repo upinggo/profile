@@ -48,8 +48,9 @@ export const getGHPagesAssetURL = (): string => {
     // In production, adjust for GitHub Pages subdirectory deployment
     // Construct path relative to the current location
     // This handles cases where the site is deployed to a subdirectory
-    const pathParts = window.location.pathname.split('/');
-    pathParts.pop();
-    console.log('Constructed asset path for GitHub Pages deployment:', pathParts.join('/'));
-    return pathParts.join('/') || '';
+    const staticOriginURL = window.location.origin;
+    const repoName = window.location.pathname.split('/')[1] || "profile"; // Assumes repo name is the first segment
+    const assetURL = `${staticOriginURL}/${repoName}`;
+    console.log('Constructed asset path for GitHub Pages deployment:', assetURL);
+    return assetURL;
 };
