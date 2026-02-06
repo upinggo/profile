@@ -22,7 +22,7 @@ export function useApi<T>(
   options: UseApiOptions = {}
 ): UseApiState<T> {
   const { enabled = true, retry = 3, retryDelay = 1000 } = options;
-  
+
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
@@ -39,7 +39,7 @@ export function useApi<T>(
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const result: ApiResponse<T> = await response.json();
       // Extract data from response - handle both direct data and wrapped response
       const extractedData = result.data !== undefined ? result.data : result as unknown as T;
@@ -48,7 +48,7 @@ export function useApi<T>(
     } catch (err) {
       const error = err instanceof Error ? err : new Error('Unknown error occurred');
       setError(error);
-      
+
       // Implement retry logic
       if (retryCount < retry) {
         setTimeout(() => {
