@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/upinggo/profile/compare/v1.1.1...v1.1.2) (2026-02-06)
+
+
+### Bug Fixes
+
+* correct asset path construction in envFetch for GitHub Pages deployment ([25a5153](https://github.com/upinggo/profile/commit/25a5153cc0f76ac55531a7068384c7845c2e93fd))
+
 ## [1.1.1](https://github.com/upinggo/profile/compare/v1.1.0...v1.1.1) (2026-02-06)
 
 
