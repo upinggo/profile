@@ -92,7 +92,7 @@ function ProfileContent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Go to the "LeetCode" Challenges
+          Go to the &quot;LeetCode&quot; Challenges
         </Navigation>
         <Navigation 
           path="https://leetcode.cn/u/wo-shi-dou-bi-ni-xin-ma/"
@@ -100,7 +100,7 @@ function ProfileContent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Go to the "力扣" Challenges
+          Go to the &quot;力扣&quot; Challenges
         </Navigation>
       </nav>
     </div>

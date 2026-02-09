@@ -1,3 +1,4 @@
+import { useApi } from '@/hooks/useApi';
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -30,8 +31,9 @@ jest.mock('@/components/common/Navigation', () => {
   };
 });
 
+
 describe('ProfileContainer', () => {
-  const mockUseApi = require('@/hooks/useApi').useApi;
+  const mockUseApi = useApi as jest.Mock;
 
   beforeEach(() => {
     jest.clearAllMocks();
