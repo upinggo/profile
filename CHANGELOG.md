@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/upinggo/profile/compare/v1.1.3...v1.1.4) (2026-02-09)
+
+
+### Bug Fixes
+
+* update navigation links to use HTML entities for quotes ([a400455](https://github.com/upinggo/profile/commit/a400455be76ae8cf3ee96fb3258b5cdcedb4b0ce))
+
 ## [1.1.3](https://github.com/upinggo/profile/compare/v1.1.2...v1.1.3) (2026-02-06)
 
 
