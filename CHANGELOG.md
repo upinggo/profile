@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/upinggo/profile/compare/v1.1.4...v1.1.5) (2026-03-10)
+
+
+### Bug Fixes
+
+* update deployment section in README to include Vercel and GitHub Pages links ([cfc6a58](https://github.com/upinggo/profile/commit/cfc6a589ccc8966be145328deefcdc71f297d28b))
+
 ## [1.1.4](https://github.com/upinggo/profile/compare/v1.1.3...v1.1.4) (2026-02-09)
 
 
