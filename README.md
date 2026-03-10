@@ -22,7 +22,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Re
 - **Styling**: CSS Modules + Tailwind CSS
 - **Testing**: Jest, React Testing Library
 - **Linting**: ESLint with TypeScript plugin
-- **Deployment**: GitHub Pages ready
+- **Deployment**: [Vercel](https://vercel.com/upinggo/profile) & [GitHub Pages](https://upinggo.github.io/profile)
 - **Release Automation**: Semantic Release with Conventional Commits
 
 ## 📁 Project Structure
@@ -219,6 +219,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - TypeScript community for type safety
 - React team for the component library
 - All contributors and supporters
+
+## 🌍 Live Demo
+
+- **Vercel**: [https://vercel.com/upinggo/profile](https://vercel.com/upinggo/profile)
+- **GitHub Pages**: [https://upinggo.github.io/profile](https://upinggo.github.io/profile)
 
 ---
 
