@@ -42,7 +42,7 @@ function ChildItemCard({ category, onItemClick }: ChildItemCardProps) {
   );
 }
 
-function TechnologyStackContent() {
+function TechnologyStackContent(): JSX.Element {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const { data: techStack, loading, error, refetch } = useApi<TechnologyCategory[]>(API_ENDPOINTS.TECH_STACK);
 

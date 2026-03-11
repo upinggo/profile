@@ -86,15 +86,18 @@ function ProfileContent() {
         <Navigation path="/TechnologyStackContainer" className={styles.navLink}>
           View Technology Stack
         </Navigation>
-        <Navigation 
-          path="https://leetcode.com/u/uping_s/" 
+        <Navigation path="/cds-parser" className={styles.navLink}>
+          🔍 CDS Expression Parser
+        </Navigation>
+        <Navigation
+          path="https://leetcode.com/u/uping_s/"
           className={styles.navLink}
           target="_blank"
           rel="noopener noreferrer"
         >
           Go to the &quot;LeetCode&quot; Challenges
         </Navigation>
-        <Navigation 
+        <Navigation
           path="https://leetcode.cn/u/wo-shi-dou-bi-ni-xin-ma/"
           className={styles.navLink}
           target="_blank"

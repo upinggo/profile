@@ -1,0 +1,47 @@
+# Sample CDS Queries for Testing
+# Lines starting with # are comments and will be ignored
+
+# Simple SELECT
+SELECT from Books { ID, title }
+
+# SELECT with WHERE
+SELECT from Books { ID, title } WHERE genre = 'Fiction'
+
+# SELECT with multiple columns
+SELECT from Authors { ID, name, country, birthYear }
+
+# SELECT with column alias
+SELECT from Books { ID, title, genre.name as genreType }
+
+# SELECT with ORDER BY
+SELECT from Books { ID, title } ORDER BY title
+
+# SELECT with ORDER BY DESC
+SELECT from Books { ID, title, price } ORDER BY price DESC
+
+# SELECT with multiple ORDER BY
+SELECT from Books { ID, title, author } ORDER BY author, title
+
+# SELECT with WHERE and ORDER BY
+SELECT from Books { ID, title, price } WHERE price > 20 ORDER BY price DESC
+
+# Reference to nested field
+SELECT from Authors { ID, name, books.title }
+
+# SELECT with complex WHERE
+SELECT from Books { ID, title } WHERE author = 'Hemingway'
+
+# SELECT with numeric comparison
+SELECT from Books { ID, title, price } WHERE price > 15
+
+# Multiple columns with aliases
+SELECT from Books { ID, title as bookTitle, author.name as authorName }
+
+# Simple entity reference
+SELECT from Users
+
+# All columns (wildcard)
+SELECT * FROM Books
+
+# Nested associations
+SELECT from Orders { ID, customer.name, items.product.title }
