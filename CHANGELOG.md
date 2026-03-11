@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/upinggo/profile/compare/v1.1.5...v1.2.0) (2026-03-11)
+
+
+### Features
+
+* add CDS Expression Parser Tool with comprehensive features and documentation ([70c983c](https://github.com/upinggo/profile/commit/70c983c411e07252de376a294642bdafae62e570))
+
 ## [1.1.5](https://github.com/upinggo/profile/compare/v1.1.4...v1.1.5) (2026-03-10)
 
 
