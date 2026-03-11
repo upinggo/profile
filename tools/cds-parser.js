@@ -318,6 +318,161 @@ class CDSParser {
   }
 
   /**
+   * Unparse CQN back to CDS query string
+   */
+  unparse(cqn) {
+    if (!cqn) {
+      throw new Error('CQN object cannot be empty');
+    }
+
+    // Handle SELECT statements
+    if (cqn.SELECT) {
+      return this.unparseSelect(cqn.SELECT);
+    }
+
+    // Handle reference objects
+    if (cqn.ref) {
+      return this.unparseRef(cqn);
+    }
+
+    // Handle value objects
+    if (cqn.val !== undefined) {
+      return this.unparseVal(cqn);
+    }
+
+    // Handle expression objects
+    if (cqn.xpr) {
+      return this.unparseXpr(cqn);
+    }
+
+    // Handle function objects
+    if (cqn.func) {
+      return this.unparseFunc(cqn);
+    }
+
+    throw new Error('Unknown CQN structure');
+  }
+
+  unparseSelect(select) {
+    let query = 'SELECT';
+
+    // Add columns
+    if (select.columns && select.columns.length > 0) {
+      query += ' from ' + this.unparseRef(select.from);
+      query += ' { ' + select.columns.map(col => {
+        let colStr = this.unparseRef(col);
+        if (col.as) {
+          colStr += ' as ' + col.as;
+        }
+        return colStr;
+      }).join(', ') + ' }';
+    } else {
+      query += ' from ' + this.unparseRef(select.from);
+    }
+
+    // Add WHERE clause
+    if (select.where) {
+      query += ' WHERE ' + this.unparseExpression(select.where);
+    }
+
+    // Add ORDER BY clause
+    if (select.orderBy && select.orderBy.length > 0) {
+      query += ' ORDER BY ' + select.orderBy.map(ord => {
+        let ordStr = this.unparseRef(ord);
+        if (ord.sort) {
+          ordStr += ' ' + ord.sort;
+        }
+        return ordStr;
+      }).join(', ');
+    }
+
+    // Add GROUP BY clause
+    if (select.groupBy && select.groupBy.length > 0) {
+      query += ' GROUP BY ' + select.groupBy.map(grp => {
+        return this.unparseRef(grp);
+      }).join(', ');
+    }
+
+    return query;
+  }
+
+  unparseRef(ref) {
+    if (ref.ref) {
+      return Array.isArray(ref.ref) ? ref.ref.join('.') : ref.ref;
+    }
+    return '';
+  }
+
+  unparseVal(val) {
+    const value = val.val;
+    if (typeof value === 'string') {
+      return `'${value}'`;
+    }
+    if (value === null) {
+      return 'null';
+    }
+    if (typeof value === 'boolean') {
+      return value.toString();
+    }
+    return String(value);
+  }
+
+  unparseXpr(xpr) {
+    if (!xpr.xpr || !Array.isArray(xpr.xpr)) {
+      return '';
+    }
+
+    return xpr.xpr.map(item => {
+      if (typeof item === 'string') {
+        return item;
+      }
+      if (item.ref) {
+        return this.unparseRef(item);
+      }
+      if (item.val !== undefined) {
+        return this.unparseVal(item);
+      }
+      if (item.xpr) {
+        return '(' + this.unparseXpr(item) + ')';
+      }
+      if (item.func) {
+        return this.unparseFunc(item);
+      }
+      return '';
+    }).join(' ');
+  }
+
+  unparseFunc(func) {
+    if (!func.func) {
+      return '';
+    }
+    const args = func.args || [];
+    const argsStr = args.map(arg => {
+      if (arg.ref) {
+        return this.unparseRef(arg);
+      }
+      if (arg.val !== undefined) {
+        return this.unparseVal(arg);
+      }
+      return '';
+    }).join(', ');
+    return `${func.func}(${argsStr})`;
+  }
+
+  unparseExpression(expr) {
+    if (expr.xpr) {
+      return this.unparseXpr(expr);
+    }
+    if (expr.ref) {
+      return this.unparseRef(expr);
+    }
+    if (expr.val !== undefined) {
+      return this.unparseVal(expr);
+    }
+    return '';
+  }
+
+  /**
    * Format output based on format type
    */
   format(cqn, format = 'json') {

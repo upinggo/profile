@@ -5,6 +5,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Re
 ## 🚀 Features
 
 - **Modern Tech Stack**: Built with Next.js 14 App Router, TypeScript, and React Server Components
+- **CDS Parser Tool**: Interactive web-based and CLI tool for parsing CDS/SQL queries into CQN format
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Accessibility**: WCAG 2.1 AA compliant with proper ARIA labels and semantic HTML
 - **Performance Optimized**: Optimized for Core Web Vitals with efficient loading strategies
@@ -32,6 +33,7 @@ src/
 ├── app/                    # Next.js 14 App Router structure
 │   ├── api/               # API routes
 │   ├── Blog/             # Blog section
+│   ├── cds-parser/       # CDS Query Parser web UI
 │   ├── ProfileContainer/ # Main profile page
 │   ├── TechnologyStackContainer/ # Tech stack showcase
 │   ├── layout.tsx        # Root layout with metadata
@@ -47,6 +49,8 @@ src/
 ├── styles/             # Global styles
 ├── types/              # TypeScript interfaces
 └── utils/              # Utility functions
+tools/
+└── cds-parser.js       # CDS Parser CLI tool
 ```
 
 ## 🚀 Getting Started
@@ -146,13 +150,25 @@ BREAKING CHANGE: User v1 endpoints have been removed"
 
 ## 🔧 Available Scripts
 
+### Development
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
+
+### Testing
 - `npm run test` - Run tests
 - `npm run test:watch` - Run tests in watch mode
 - `npm run test:coverage` - Generate test coverage
-- `npm run type-check` - Run TypeScript type checking
+
+### CDS Parser CLI
+- `npm run cds:repl` - Start interactive CDS REPL
+- `npm run cds:parse` - Parse single CDS expression
+- `npm run cds:test` - Test parser with sample queries
+- `npm run cds:test-parser` - Run parser test suite
+
+### Deployment
+- `npm run deploy` - Build and deploy to GitHub Pages
 
 ## 🎨 Styling Approach
 
@@ -174,6 +190,26 @@ Comprehensive TypeScript interfaces are defined in `src/types/index.ts` covering
 The application includes mock API endpoints that can be easily replaced with real backend services:
 - `/api/profile` - Profile data endpoint
 - `/api/tech-stack` - Technology stack endpoint
+
+## 🔍 CDS Parser Tool
+
+This project includes a comprehensive CDS (Core Data Services) query parser:
+
+### Web Interface (`/cds-parser`)
+- Interactive browser-based parser
+- Parse CDS/SQL → CQN (JSON)
+- Unparse CQN → CDS/SQL
+- Real-time syntax validation
+- Support for SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER
+- Example queries and documentation
+
+### CLI Tool (`tools/cds-parser.js`)
+- Interactive REPL mode
+- Batch processing from files
+- Multiple output formats
+- Expression utilities (ref, val, xpr, func)
+
+**Full documentation**: See [tools/README.md](tools/README.md) for detailed examples, API usage, and technical details.
 
 ## 📱 Responsive Design
 
