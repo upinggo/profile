@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/upinggo/profile/compare/v1.2.0...v1.3.0) (2026-03-11)
+
+
+### Features
+
+* add unparse functionality to convert CQN back to CDS query strings ([cd16604](https://github.com/upinggo/profile/commit/cd166044597068e8bfefea07c8eedca7bf473981))
+
 # [1.2.0](https://github.com/upinggo/profile/compare/v1.1.5...v1.2.0) (2026-03-11)
 
 
