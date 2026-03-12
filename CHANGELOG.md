@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/upinggo/profile/compare/v1.3.0...v1.4.0) (2026-03-12)
+
+
+### Features
+
+* integrate oxlint for linting and add configuration file ([d84d852](https://github.com/upinggo/profile/commit/d84d852d7e49669285beee42538a0ed5628a40d3))
+
 # [1.3.0](https://github.com/upinggo/profile/compare/v1.2.0...v1.3.0) (2026-03-11)
 
 
