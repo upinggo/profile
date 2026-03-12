@@ -18,8 +18,9 @@ npm run preview       # Preview the built static export
 
 ### Linting & Type Checking
 ```bash
-npm run lint          # Run ESLint with Next.js and TypeScript rules
-npm run type-check   # Run TypeScript type checking (noEmit)
+npm run lint          # Run oxlint (fast Rust-based linter)
+npm run lint:fix      # Run oxlint with auto-fix
+npm run type-check    # Run TypeScript type checking (noEmit)
 ```
 
 ### Testing
