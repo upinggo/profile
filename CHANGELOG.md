@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/upinggo/profile/compare/v1.4.0...v1.5.0) (2026-06-15)
+
+
+### Features
+
+* add News Reports feature with snapshot management and styling ([0789b3e](https://github.com/upinggo/profile/commit/0789b3e422b3e486f3d3a8644652f46f55107c35))
+
 # [1.4.0](https://github.com/upinggo/profile/compare/v1.3.0...v1.4.0) (2026-03-12)
 
 
