@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/upinggo/profile/compare/v1.6.0...v1.7.0) (2026-06-15)
+
+
+### Features
+
+* update copy-news-reports script and enhance NewsReports component for better deployment compatibility ([542db27](https://github.com/upinggo/profile/commit/542db2759f973f891a4240bad906fa8ba19adf27))
+
 # [1.6.0](https://github.com/upinggo/profile/compare/v1.5.2...v1.6.0) (2026-06-15)
 
 
