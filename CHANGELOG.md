@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/upinggo/profile/compare/v1.5.1...v1.5.2) (2026-06-15)
+
+
+### Bug Fixes
+
+* improve GitHub Pages asset URL handling for subdirectory deployment ([b52b07c](https://github.com/upinggo/profile/commit/b52b07c1cc70b0133f3b762d60574d3b5882ce35))
+
 ## [1.5.1](https://github.com/upinggo/profile/compare/v1.5.0...v1.5.1) (2026-06-15)
 
 
