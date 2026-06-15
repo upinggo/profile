@@ -49,12 +49,13 @@ export const getGHPagesAssetURL = (): string => {
     if (isDevelopment || typeof window === 'undefined') {
         return '';
     }
-    // In production, adjust for GitHub Pages subdirectory deployment
-    // Construct path relative to the current location
-    // This handles cases where the site is deployed to a subdirectory
+    // Only GitHub Pages serves the site from a repo subdirectory (e.g. /profile/).
+    // Other hosts (Vercel, Netlify, custom domains) serve from the root, so the
+    // asset base must stay empty — otherwise the first path segment of whatever
+    // route the user is on (e.g. "NewsReports") gets mistaken for the repo name.
     const staticOriginURL = window.location.origin;
-    const repoName = window.location.pathname.split('/')[1] || "profile"; // Assumes repo name is the first segment
-    const assetURL = `${staticOriginURL}/${repoName}`;
+    const repoName = window.location.pathname.split('/')[1]; // Extract the repo name from the URL path
+    const assetURL = window.location.hostname.endsWith('github.io') ? `${staticOriginURL}/${repoName}` : `${staticOriginURL}`;
     console.log('Constructed asset path for GitHub Pages deployment:', assetURL);
     return assetURL;
 };
