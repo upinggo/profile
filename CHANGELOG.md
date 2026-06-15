@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/upinggo/profile/compare/v1.5.2...v1.6.0) (2026-06-15)
+
+
+### Features
+
+* add build version and time display in profile footer; update copy-news-reports script for public target ([b96e818](https://github.com/upinggo/profile/commit/b96e81813ff8dbe819be5abc91b64771bc7ff4f6))
+
 ## [1.5.2](https://github.com/upinggo/profile/compare/v1.5.1...v1.5.2) (2026-06-15)
 
 
