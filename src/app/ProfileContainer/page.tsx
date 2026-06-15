@@ -89,6 +89,9 @@ function ProfileContent() {
         <Navigation path="/cds-parser" className={styles.navLink}>
           🔍 CDS Expression Parser
         </Navigation>
+        <Navigation path="/NewsReports" className={styles.navLink}>
+          📰 News Reports
+        </Navigation>
         <Navigation
           path="https://leetcode.com/u/uping_s/"
           className={styles.navLink}

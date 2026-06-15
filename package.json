@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "next dev",
+    "predev": "node scripts/copy-news-reports.js --target=public",
     "build": "next build",
+    "postbuild": "node scripts/copy-news-reports.js --target=out",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "preview": "npx serve out",

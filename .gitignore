@@ -42,3 +42,5 @@ logs
 # Build outputs
 dist/
 build/
+# Dev-only copy of news-reports (synced by predev)
+/public/news-reports/
