@@ -17,12 +17,19 @@ export default function NewsReports() {
   const [error, setError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string>(LATEST_KEY);
   const [openDates, setOpenDates] = useState<Record<string, boolean>>({});
+  // Vercel's static hosting strips trailing `.html` (e.g. `/foo.html` → 404,
+  // `/foo` → 200). GitHub Pages keeps the extension. Detect at runtime so the
+  // same manifest works for both deploys.
+  const [stripHtml, setStripHtml] = useState<boolean>(false);
 
   useEffect(() => {
     // In dev, use a relative URL so the local dev server serves the files.
     // In production (static export / GH Pages), prefix with the asset base.
     const assetBase = isDevelopment ? '' : getGHPagesAssetURL();
     setBase(assetBase);
+    if (typeof window !== 'undefined') {
+      setStripHtml(window.location.hostname.endsWith('.vercel.app'));
+    }
 
     fetch(`${assetBase}/news-reports/manifest.json`)
       .then((r) => {
@@ -40,11 +47,12 @@ export default function NewsReports() {
 
   const iframeSrc = useMemo(() => {
     if (!manifest) return '';
-    if (selected === LATEST_KEY) {
-      return manifest.latest ? `${base}/news-reports/${manifest.latest}` : '';
-    }
-    return `${base}/news-reports/${selected}`;
-  }, [manifest, selected, base]);
+    const path =
+      selected === LATEST_KEY ? manifest.latest ?? '' : selected;
+    if (!path) return '';
+    const finalPath = stripHtml ? path.replace(/\.html$/, '') : path;
+    return `${base}/news-reports/${finalPath}`;
+  }, [manifest, selected, base, stripHtml]);
 
   const toggleDate = (date: string) => {
     setOpenDates((prev) => ({ ...prev, [date]: !prev[date] }));
