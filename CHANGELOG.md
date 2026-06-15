@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/upinggo/profile/compare/v1.5.0...v1.5.1) (2026-06-15)
+
+
+### Bug Fixes
+
+* correct command for building Next.js application in workflow ([2e76dff](https://github.com/upinggo/profile/commit/2e76dfff3ab1fcaa24be155a0c6a4ac92991813b))
+
 # [1.5.0](https://github.com/upinggo/profile/compare/v1.4.0...v1.5.0) (2026-06-15)
 
 
