@@ -109,6 +109,18 @@ function ProfileContent() {
           Go to the &quot;力扣&quot; Challenges
         </Navigation>
       </nav>
+
+      <footer className={styles.versionTag} aria-label="Build version">
+        <span>v{process.env.NEXT_PUBLIC_APP_VERSION}</span>
+        {process.env.NEXT_PUBLIC_BUILD_TIME && (
+          <span className={styles.buildTime}>
+            {' · Built '}
+            <time dateTime={process.env.NEXT_PUBLIC_BUILD_TIME}>
+              {new Date(process.env.NEXT_PUBLIC_BUILD_TIME).toLocaleString()}
+            </time>
+          </span>
+        )}
+      </footer>
     </div>
   );
 }

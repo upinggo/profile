@@ -1,3 +1,5 @@
+const pkg = require('./package.json');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // This enables static export for GitHub Pages
@@ -12,7 +14,11 @@ const nextConfig = {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
-  }
+  },
+  env: {
+    NEXT_PUBLIC_APP_VERSION: pkg.version,
+    NEXT_PUBLIC_BUILD_TIME: new Date().toISOString(),
+  },
 };
 
 module.exports = nextConfig;

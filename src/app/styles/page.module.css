@@ -206,3 +206,17 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
 }
+
+.versionTag {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  font-size: 0.8rem;
+  color: #adb5bd;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.buildTime {
+  color: #ced4da;
+}

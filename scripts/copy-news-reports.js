@@ -5,18 +5,22 @@ const path = require('path');
 const repoRoot = path.resolve(__dirname, '..');
 const src = path.join(repoRoot, 'news-reports');
 
-// Target: --target=out (default, for static export) or --target=public (for next dev)
+// Target: --target=public (default) or --target=out (legacy static-export path).
+// `public/` is the canonical Next.js static-asset root and works on both
+// GitHub Pages (output: 'export') and Vercel — files placed there before
+// `next build` are baked into the deploy. `out/` is kept for backward
+// compatibility but should not be the primary path.
 const targetArg = process.argv.find((a) => a.startsWith('--target='));
-const target = targetArg ? targetArg.split('=')[1] : 'out';
+const target = targetArg ? targetArg.split('=')[1] : 'public';
 const dest = path.join(repoRoot, target, 'news-reports');
 
 if (!fs.existsSync(src)) {
   console.warn(`[copy-news-reports] source not found, skipping: ${src}`);
   process.exit(0);
 }
-if (!fs.existsSync(path.join(repoRoot, target))) {
-  console.warn(`[copy-news-reports] ${target}/ not found, skipping`);
-  process.exit(0);
+const targetRoot = path.join(repoRoot, target);
+if (!fs.existsSync(targetRoot)) {
+  fs.mkdirSync(targetRoot, { recursive: true });
 }
 
 fs.rmSync(dest, { recursive: true, force: true });
