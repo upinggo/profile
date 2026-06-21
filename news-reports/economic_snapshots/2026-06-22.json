@@ -1,0 +1,95 @@
+{
+  "snapshot_time": "2026-06-22 00:13:46",
+  "a_stock": {
+    "沪深300": {
+      "symbol": "sh000300",
+      "price": 4941.6,
+      "prev_close": 4931.39,
+      "change_pct": 0.21,
+      "as_of": "20260618161407"
+    },
+    "中证500": {
+      "symbol": "sh000905",
+      "price": 8673.09,
+      "prev_close": 8627.09,
+      "change_pct": 0.53,
+      "as_of": "20260618161413"
+    },
+    "中证1000": {
+      "symbol": "sh000852",
+      "price": 8771.02,
+      "prev_close": 8704.47,
+      "change_pct": 0.76,
+      "as_of": "20260618161413"
+    }
+  },
+  "a_stock_industry": {
+    "半导体": {
+      "symbol": "sh000827",
+      "price": 1946.54,
+      "prev_close": 1974.52,
+      "change_pct": -1.42,
+      "as_of": "20260618161413"
+    },
+    "新能源车": {
+      "symbol": "sz399976",
+      "price": 4579.83,
+      "prev_close": 4619.86,
+      "change_pct": -0.87,
+      "as_of": "20260618161442"
+    },
+    "消费": {
+      "symbol": "sh000932",
+      "price": 11832.48,
+      "prev_close": 12111.38,
+      "change_pct": -2.3,
+      "as_of": "20260618161413"
+    },
+    "医药": {
+      "symbol": "sh000933",
+      "price": 7012.16,
+      "prev_close": 6942.34,
+      "change_pct": 1.01,
+      "as_of": "20260618161413"
+    },
+    "银行": {
+      "symbol": "sh000934",
+      "price": 5401.26,
+      "prev_close": 5581.8,
+      "change_pct": -3.23,
+      "as_of": "20260618161413"
+    },
+    "高股息红利": {
+      "symbol": "sh000922",
+      "price": 5316.65,
+      "prev_close": 5434.15,
+      "change_pct": -2.16,
+      "as_of": "20260618161448"
+    }
+  },
+  "hk_stock": {
+    "恒生科技": {
+      "symbol": "hkHSTECH",
+      "price": 4604.35,
+      "prev_close": 4669.07,
+      "change_pct": -1.39,
+      "as_of": "2026/06/18 16:08:28"
+    },
+    "港股高股息": {
+      "symbol": "hkHSCEI",
+      "price": 7976.04,
+      "prev_close": 8144.03,
+      "change_pct": -2.06,
+      "as_of": "2026/06/18 16:08:28"
+    }
+  },
+  "us_stock": {},
+  "bonds": {},
+  "commodities": {},
+  "fx": {},
+  "china_macro": {},
+  "fetch_errors": [],
+  "sources_used": [
+    "tencent"
+  ]
+}
