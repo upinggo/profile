@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-06-22 12:09:37",
+  "snapshot_time": "2026-06-22 12:27:35",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -70,17 +70,17 @@
   "hk_stock": {
     "恒生科技": {
       "symbol": "hkHSTECH",
-      "price": 4546.44,
+      "price": 4542.0,
       "prev_close": 4604.35,
-      "change_pct": -1.26,
-      "as_of": "2026/06/22 11:54:36"
+      "change_pct": -1.35,
+      "as_of": "2026/06/22 11:59:59"
     },
     "港股高股息": {
       "symbol": "hkHSCEI",
-      "price": 7896.31,
+      "price": 7893.18,
       "prev_close": 7976.04,
-      "change_pct": -1.0,
-      "as_of": "2026/06/22 11:54:36"
+      "change_pct": -1.04,
+      "as_of": "2026/06/22 11:59:59"
     }
   },
   "us_stock": {},
