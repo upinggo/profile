@@ -1,86 +1,86 @@
 {
-  "snapshot_time": "2026-06-26 07:47:56",
+  "snapshot_time": "2026-06-26 12:43:11",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
-      "price": 5020.1,
-      "prev_close": 4943.02,
-      "change_pct": 1.56,
-      "as_of": "20260625161406"
+      "price": 4878.74,
+      "prev_close": 5020.1,
+      "change_pct": -2.82,
+      "as_of": "20260626120500"
     },
     "中证500": {
       "symbol": "sh000905",
-      "price": 8938.01,
-      "prev_close": 8842.94,
-      "change_pct": 1.08,
-      "as_of": "20260625161412"
+      "price": 8734.6,
+      "prev_close": 8938.01,
+      "change_pct": -2.28,
+      "as_of": "20260626120500"
     },
     "中证1000": {
       "symbol": "sh000852",
-      "price": 8825.92,
-      "prev_close": 8793.49,
-      "change_pct": 0.37,
-      "as_of": "20260625161412"
+      "price": 8609.54,
+      "prev_close": 8825.92,
+      "change_pct": -2.45,
+      "as_of": "20260626120500"
     }
   },
   "a_stock_industry": {
     "半导体": {
       "symbol": "sh000827",
-      "price": 1931.39,
-      "prev_close": 1933.86,
-      "change_pct": -0.13,
-      "as_of": "20260625161412"
+      "price": 1897.08,
+      "prev_close": 1931.39,
+      "change_pct": -1.78,
+      "as_of": "20260626120500"
     },
     "新能源车": {
       "symbol": "sz399976",
-      "price": 4495.85,
-      "prev_close": 4548.95,
-      "change_pct": -1.17,
-      "as_of": "20260625161418"
+      "price": 4274.46,
+      "prev_close": 4495.85,
+      "change_pct": -4.92,
+      "as_of": "20260626120554"
     },
     "消费": {
       "symbol": "sh000932",
-      "price": 11592.18,
-      "prev_close": 11564.92,
-      "change_pct": 0.24,
-      "as_of": "20260625161412"
+      "price": 11612.1,
+      "prev_close": 11592.18,
+      "change_pct": 0.17,
+      "as_of": "20260626120500"
     },
     "医药": {
       "symbol": "sh000933",
-      "price": 7218.07,
-      "prev_close": 7184.61,
-      "change_pct": 0.47,
-      "as_of": "20260625161412"
+      "price": 7062.22,
+      "prev_close": 7218.07,
+      "change_pct": -2.16,
+      "as_of": "20260626120500"
     },
     "银行": {
       "symbol": "sh000934",
-      "price": 5523.43,
-      "prev_close": 5479.82,
-      "change_pct": 0.8,
-      "as_of": "20260625161412"
+      "price": 5437.34,
+      "prev_close": 5523.43,
+      "change_pct": -1.56,
+      "as_of": "20260626120500"
     },
     "高股息红利": {
       "symbol": "sh000922",
-      "price": 5198.51,
-      "prev_close": 5262.82,
-      "change_pct": -1.22,
-      "as_of": "20260625161447"
+      "price": 5098.87,
+      "prev_close": 5198.51,
+      "change_pct": -1.92,
+      "as_of": "20260626120548"
     }
   },
   "hk_stock": {
     "恒生科技": {
       "symbol": "hkHSTECH",
-      "price": 4405.92,
-      "prev_close": 4479.02,
-      "change_pct": -1.63,
-      "as_of": "2026/06/25 16:08:34"
+      "price": 4259.91,
+      "prev_close": 4405.92,
+      "change_pct": -3.31,
+      "as_of": "2026/06/26 11:59:59"
     },
     "港股高股息": {
       "symbol": "hkHSCEI",
-      "price": 7608.38,
-      "prev_close": 7764.97,
-      "change_pct": -2.02,
-      "as_of": "2026/06/25 16:08:34"
+      "price": 7450.35,
+      "prev_close": 7608.38,
+      "change_pct": -2.08,
+      "as_of": "2026/06/26 11:59:59"
     }
   },
   "us_stock": {},
