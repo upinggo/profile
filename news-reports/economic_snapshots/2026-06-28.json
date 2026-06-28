@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-06-28 03:48:14",
+  "snapshot_time": "2026-06-28 12:55:22",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,16 +86,16 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": NaN,
+      "price": 29118.2402,
       "prev_close": 29440.3203,
-      "change_pct": NaN,
+      "change_pct": -1.09,
       "as_of": "2026-06-26"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": NaN,
+      "price": 7354.02,
       "prev_close": 7357.4902,
-      "change_pct": NaN,
+      "change_pct": -0.05,
       "as_of": "2026-06-26"
     }
   },
@@ -107,8 +107,8 @@
     "美国国债10Y": {
       "symbol": "^TNX",
       "price": 4.372,
-      "prev_close": 4.372,
-      "change_pct": 0.0,
+      "prev_close": 4.392,
+      "change_pct": -0.46,
       "as_of": "2026-06-26",
       "yield_pct": 0.437
     }
@@ -116,9 +116,9 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4078.7,
+      "price": 4096.2998,
       "prev_close": 4030.5,
-      "change_pct": 1.2,
+      "change_pct": 1.63,
       "as_of": "2026-06-26"
     },
     "原油WTI": {
@@ -130,10 +130,10 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 60073.9102,
+      "price": 60047.9805,
       "prev_close": 60016.4297,
-      "change_pct": 0.1,
-      "as_of": "2026-06-27"
+      "change_pct": 0.05,
+      "as_of": "2026-06-28"
     }
   },
   "fx": {
@@ -142,17 +142,13 @@
       "price": 6.7897,
       "prev_close": 6.79,
       "change_pct": -0.0,
-      "as_of": "2026-06-27"
+      "as_of": "2026-06-28"
     }
   },
-  "china_macro": {
-    "PMI制造业": {
-      "value": 49.4,
-      "as_of": "2025-08-31"
-    }
-  },
+  "china_macro": {},
   "fetch_errors": [
     "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
