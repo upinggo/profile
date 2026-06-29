@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-06-30 00:13:57",
+  "snapshot_time": "2026-06-30 05:46:21",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,16 +86,16 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29563.8145,
+      "price": 29774.752,
       "prev_close": 29118.2402,
-      "change_pct": 1.53,
+      "change_pct": 2.25,
       "as_of": "2026-06-29"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7413.79,
+      "price": 7440.4302,
       "prev_close": 7354.02,
-      "change_pct": 0.81,
+      "change_pct": 1.18,
       "as_of": "2026-06-29"
     }
   },
@@ -106,49 +106,53 @@
     },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.376,
+      "price": 4.374,
       "prev_close": 4.372,
-      "change_pct": 0.09,
+      "change_pct": 0.05,
       "as_of": "2026-06-29",
-      "yield_pct": 0.438
+      "yield_pct": 0.437
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4040.7,
+      "price": 4030.5,
       "prev_close": 4078.7,
-      "change_pct": -0.93,
+      "change_pct": -1.18,
       "as_of": "2026-06-29"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 70.78,
+      "price": 70.42,
       "prev_close": 69.23,
-      "change_pct": 2.24,
+      "change_pct": 1.72,
       "as_of": "2026-06-29"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 59620.9805,
+      "price": 60382.6719,
       "prev_close": 59532.3398,
-      "change_pct": 0.15,
+      "change_pct": 1.43,
       "as_of": "2026-06-29"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7855,
+      "price": 6.7868,
       "prev_close": 6.79,
-      "change_pct": -0.07,
+      "change_pct": -0.05,
       "as_of": "2026-06-29"
     }
   },
-  "china_macro": {},
+  "china_macro": {
+    "PMI制造业": {
+      "value": 49.4,
+      "as_of": "2025-08-31"
+    }
+  },
   "fetch_errors": [
     "[宏观-CPI同比] 超时（>10.0s）",
-    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
