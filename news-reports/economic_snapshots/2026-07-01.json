@@ -1,70 +1,70 @@
 {
-  "snapshot_time": "2026-07-01 12:56:46",
+  "snapshot_time": "2026-07-01 18:18:00",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
-      "price": 5001.54,
+      "price": 4958.98,
       "prev_close": 4979.43,
-      "change_pct": 0.44,
-      "as_of": "20260701125600"
+      "change_pct": -0.41,
+      "as_of": "20260701161407"
     },
     "中证500": {
       "symbol": "sh000905",
-      "price": 9121.63,
+      "price": 9028.93,
       "prev_close": 9031.38,
-      "change_pct": 1.0,
-      "as_of": "20260701125600"
+      "change_pct": -0.03,
+      "as_of": "20260701161413"
     },
     "中证1000": {
       "symbol": "sh000852",
-      "price": 8920.2,
+      "price": 8876.63,
       "prev_close": 8809.79,
-      "change_pct": 1.25,
-      "as_of": "20260701125600"
+      "change_pct": 0.76,
+      "as_of": "20260701161413"
     }
   },
   "a_stock_industry": {
     "半导体": {
       "symbol": "sh000827",
-      "price": 1938.37,
+      "price": 1922.89,
       "prev_close": 1947.04,
-      "change_pct": -0.45,
-      "as_of": "20260701125600"
+      "change_pct": -1.24,
+      "as_of": "20260701161413"
     },
     "新能源车": {
       "symbol": "sz399976",
-      "price": 4485.54,
+      "price": 4441.29,
       "prev_close": 4393.97,
-      "change_pct": 2.08,
-      "as_of": "20260701125621"
+      "change_pct": 1.08,
+      "as_of": "20260701161421"
     },
     "消费": {
       "symbol": "sh000932",
-      "price": 11970.83,
+      "price": 11921.47,
       "prev_close": 11658.46,
-      "change_pct": 2.68,
-      "as_of": "20260701125600"
+      "change_pct": 2.26,
+      "as_of": "20260701161413"
     },
     "医药": {
       "symbol": "sh000933",
-      "price": 7534.89,
+      "price": 7612.73,
       "prev_close": 7350.44,
-      "change_pct": 2.51,
-      "as_of": "20260701125600"
+      "change_pct": 3.57,
+      "as_of": "20260701161413"
     },
     "银行": {
       "symbol": "sh000934",
-      "price": 5511.4,
+      "price": 5512.07,
       "prev_close": 5366.87,
-      "change_pct": 2.69,
-      "as_of": "20260701125600"
+      "change_pct": 2.71,
+      "as_of": "20260701161413"
     },
     "高股息红利": {
       "symbol": "sh000922",
-      "price": 5126.83,
+      "price": 5108.21,
       "prev_close": 5022.46,
-      "change_pct": 2.08,
-      "as_of": "20260701125632"
+      "change_pct": 1.71,
+      "as_of": "20260701161447"
     }
   },
   "hk_stock": {
@@ -100,55 +100,56 @@
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.733,
-      "as_of": "2026-06-30"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.418,
-      "prev_close": 4.372,
-      "change_pct": 1.05,
-      "as_of": "2026-06-30",
-      "yield_pct": 0.442
+      "price": 4.372,
+      "prev_close": 4.392,
+      "change_pct": -0.46,
+      "as_of": "2026-06-26",
+      "yield_pct": 0.437
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 3987.6001,
+      "price": 4002.1001,
       "prev_close": 4022.8999,
-      "change_pct": -0.88,
+      "change_pct": -0.52,
       "as_of": "2026-07-01"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 69.73,
+      "price": 68.93,
       "prev_close": 69.5,
-      "change_pct": 0.33,
+      "change_pct": -0.82,
       "as_of": "2026-07-01"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 59261.4414,
-      "prev_close": 60138.3789,
-      "change_pct": -1.46,
+      "price": 58698.6602,
+      "prev_close": 58558.8594,
+      "change_pct": 0.24,
       "as_of": "2026-07-01"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7924,
+      "price": 6.7828,
       "prev_close": 6.7936,
-      "change_pct": -0.02,
+      "change_pct": -0.16,
       "as_of": "2026-07-01"
     }
   },
-  "china_macro": {},
+  "china_macro": {
+    "PMI制造业": {
+      "value": 49.4,
+      "as_of": "2025-08-31"
+    }
+  },
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
-    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
