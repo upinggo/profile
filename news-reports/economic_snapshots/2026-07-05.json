@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-07-05 03:40:37",
+  "snapshot_time": "2026-07-05 12:33:34",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -106,11 +106,11 @@
     },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.372,
-      "prev_close": 4.372,
+      "price": 4.485,
+      "prev_close": 4.485,
       "change_pct": 0.0,
-      "as_of": "2026-06-26",
-      "yield_pct": 0.437
+      "as_of": "2026-07-02",
+      "yield_pct": 0.448
     }
   },
   "commodities": {
@@ -130,10 +130,10 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 63271.8789,
+      "price": 62862.1094,
       "prev_close": 62544.1992,
-      "change_pct": 1.16,
-      "as_of": "2026-07-04"
+      "change_pct": 0.51,
+      "as_of": "2026-07-05"
     }
   },
   "fx": {
@@ -142,7 +142,7 @@
       "price": 6.7702,
       "prev_close": 6.7886,
       "change_pct": -0.27,
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-05"
     }
   },
   "china_macro": {
