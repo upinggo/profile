@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-07-11 05:30:26",
+  "snapshot_time": "2026-07-11 11:46:24",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -130,29 +130,25 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 63980.2812,
+      "price": 64123.4688,
       "prev_close": 63193.1484,
-      "change_pct": 1.25,
-      "as_of": "2026-07-10"
+      "change_pct": 1.47,
+      "as_of": "2026-07-11"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7761,
-      "prev_close": 6.8025,
-      "change_pct": -0.39,
-      "as_of": "2026-07-10"
+      "price": 6.7731,
+      "prev_close": 6.7921,
+      "change_pct": -0.28,
+      "as_of": "2026-07-11"
     }
   },
-  "china_macro": {
-    "PMI制造业": {
-      "value": 49.4,
-      "as_of": "2025-08-31"
-    }
-  },
+  "china_macro": {},
   "fetch_errors": [
     "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
