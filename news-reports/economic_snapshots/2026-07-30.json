@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-07-30 18:35:37",
+  "snapshot_time": "2026-07-30 22:36:14",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,58 +86,62 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 27192.3105,
-      "prev_close": 27763.1309,
-      "change_pct": -2.06,
-      "as_of": "2026-07-29"
+      "price": 28102.9648,
+      "prev_close": 27192.3105,
+      "change_pct": 3.35,
+      "as_of": "2026-07-30"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7316.1499,
-      "prev_close": 7428.7798,
-      "change_pct": -1.52,
-      "as_of": "2026-07-29"
+      "price": 7412.1699,
+      "prev_close": 7316.1499,
+      "change_pct": 1.31,
+      "as_of": "2026-07-30"
     }
   },
   "bonds": {
+    "中国国债10Y": {
+      "yield_pct": 1.7196,
+      "as_of": "2026-07-30"
+    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.622,
-      "prev_close": 4.604,
-      "change_pct": 0.39,
-      "as_of": "2026-07-29",
-      "yield_pct": 0.462
+      "price": 4.659,
+      "prev_close": 4.622,
+      "change_pct": 0.8,
+      "as_of": "2026-07-30",
+      "yield_pct": 0.466
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4135.1001,
+      "price": 4148.0,
       "prev_close": 4034.7,
-      "change_pct": 2.49,
+      "change_pct": 2.81,
       "as_of": "2026-07-30"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 84.25,
+      "price": 84.15,
       "prev_close": 84.46,
-      "change_pct": -0.25,
+      "change_pct": -0.37,
       "as_of": "2026-07-30"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 64489.9883,
+      "price": 64747.5,
       "prev_close": 63908.168,
-      "change_pct": 0.91,
+      "change_pct": 1.31,
       "as_of": "2026-07-30"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7441,
+      "price": 6.7423,
       "prev_close": 6.771,
-      "change_pct": -0.4,
+      "change_pct": -0.42,
       "as_of": "2026-07-30"
     }
   },
@@ -148,7 +152,6 @@
     }
   },
   "fetch_errors": [
-    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
