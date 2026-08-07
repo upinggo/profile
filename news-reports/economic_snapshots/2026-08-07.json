@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-07 17:17:55",
+  "snapshot_time": "2026-08-07 21:42:15",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,62 +86,62 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29373.3301,
-      "prev_close": 29487.7891,
-      "change_pct": -0.39,
-      "as_of": "2026-08-06"
+      "price": 29604.7559,
+      "prev_close": 29373.3301,
+      "change_pct": 0.79,
+      "as_of": "2026-08-07"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7709.96,
-      "prev_close": 7723.5498,
-      "change_pct": -0.18,
-      "as_of": "2026-08-06"
+      "price": 7735.2402,
+      "prev_close": 7709.96,
+      "change_pct": 0.33,
+      "as_of": "2026-08-07"
     }
   },
   "bonds": {
     "中国国债10Y": {
-      "yield_pct": 1.7143,
-      "as_of": "2026-08-06"
+      "yield_pct": 1.7114,
+      "as_of": "2026-08-07"
     },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.67,
-      "prev_close": 4.617,
-      "change_pct": 1.15,
-      "as_of": "2026-08-06",
-      "yield_pct": 0.467
+      "price": 4.625,
+      "prev_close": 4.67,
+      "change_pct": -0.96,
+      "as_of": "2026-08-07",
+      "yield_pct": 0.463
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4364.2002,
+      "price": 4417.1001,
       "prev_close": 4242.0,
-      "change_pct": 2.88,
+      "change_pct": 4.13,
       "as_of": "2026-08-07"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 77.75,
+      "price": 76.95,
       "prev_close": 77.29,
-      "change_pct": 0.6,
+      "change_pct": -0.44,
       "as_of": "2026-08-07"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 64718.3906,
+      "price": 65165.9883,
       "prev_close": 64262.1133,
-      "change_pct": 0.71,
+      "change_pct": 1.41,
       "as_of": "2026-08-07"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.747,
+      "price": 6.7349,
       "prev_close": 6.7497,
-      "change_pct": -0.04,
+      "change_pct": -0.22,
       "as_of": "2026-08-07"
     }
   },
