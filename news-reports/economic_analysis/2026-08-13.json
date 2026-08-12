@@ -1,0 +1,189 @@
+{
+  "global_trends": "",
+  "china_trends": "",
+  "key_risks": [],
+  "allocations": {},
+  "allocation_rationale": {},
+  "disclaimer": "本配置基于公开新闻与行情快照由 AI 推演生成，非投资建议，盈亏自负。",
+  "raw_response": "",
+  "success": true,
+  "skipped": false,
+  "error": "",
+  "snapshot_time": "2026-08-13 03:30:04",
+  "sources_used": [
+    "tencent",
+    "akshare",
+    "yfinance"
+  ],
+  "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
+    "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-M2同比] 超时（>10.0s）"
+  ],
+  "finance_news_count": 4,
+  "validation_warnings": [
+    "档位 conservative 缺失或不是 dict",
+    "档位 balanced 缺失或不是 dict",
+    "档位 aggressive 缺失或不是 dict"
+  ],
+  "snapshot_data": {
+    "snapshot_time": "2026-08-13 03:30:04",
+    "a_stock": {
+      "沪深300": {
+        "symbol": "sh000300",
+        "price": 4690.92,
+        "prev_close": 4663.79,
+        "change_pct": 0.58,
+        "as_of": "20260812161414"
+      },
+      "中证500": {
+        "symbol": "sh000905",
+        "price": 8045.31,
+        "prev_close": 7967.54,
+        "change_pct": 0.98,
+        "as_of": "20260812161414"
+      },
+      "中证1000": {
+        "symbol": "sh000852",
+        "price": 7793.72,
+        "prev_close": 7698.05,
+        "change_pct": 1.24,
+        "as_of": "20260812161402"
+      }
+    },
+    "a_stock_industry": {
+      "半导体": {
+        "symbol": "sh000827",
+        "price": 1748.07,
+        "prev_close": 1734.33,
+        "change_pct": 0.79,
+        "as_of": "20260812161426"
+      },
+      "新能源车": {
+        "symbol": "sz399976",
+        "price": 3958.93,
+        "prev_close": 3937.81,
+        "change_pct": 0.54,
+        "as_of": "20260812161427"
+      },
+      "消费": {
+        "symbol": "sh000932",
+        "price": 12823.67,
+        "prev_close": 12791.82,
+        "change_pct": 0.25,
+        "as_of": "20260812161420"
+      },
+      "医药": {
+        "symbol": "sh000933",
+        "price": 8336.72,
+        "prev_close": 8381.43,
+        "change_pct": -0.53,
+        "as_of": "20260812161420"
+      },
+      "银行": {
+        "symbol": "sh000934",
+        "price": 5605.77,
+        "prev_close": 5603.62,
+        "change_pct": 0.04,
+        "as_of": "20260812161420"
+      },
+      "高股息红利": {
+        "symbol": "sh000922",
+        "price": 5513.68,
+        "prev_close": 5531.31,
+        "change_pct": -0.32,
+        "as_of": "20260812161450"
+      }
+    },
+    "hk_stock": {
+      "恒生科技": {
+        "symbol": "hkHSTECH",
+        "price": 4776.44,
+        "prev_close": 4824.42,
+        "change_pct": -0.99,
+        "as_of": "2026/08/12 16:08:34"
+      },
+      "港股高股息": {
+        "symbol": "hkHSCEI",
+        "price": 8446.27,
+        "prev_close": 8528.1,
+        "change_pct": -0.96,
+        "as_of": "2026/08/12 16:08:34"
+      }
+    },
+    "us_stock": {
+      "纳斯达克100": {
+        "symbol": "^NDX",
+        "price": 29754.0566,
+        "prev_close": 29525.4805,
+        "change_pct": 0.77,
+        "as_of": "2026-08-12"
+      },
+      "标普500": {
+        "symbol": "^GSPC",
+        "price": 7751.3301,
+        "prev_close": 7728.2002,
+        "change_pct": 0.3,
+        "as_of": "2026-08-12"
+      }
+    },
+    "bonds": {
+      "美国国债10Y": {
+        "symbol": "^TNX",
+        "price": 4.682,
+        "prev_close": 4.684,
+        "change_pct": -0.04,
+        "as_of": "2026-08-12",
+        "yield_pct": 0.468
+      }
+    },
+    "commodities": {
+      "黄金": {
+        "symbol": "GC=F",
+        "price": 4476.3999,
+        "prev_close": 4383.0,
+        "change_pct": 2.13,
+        "as_of": "2026-08-12"
+      },
+      "原油WTI": {
+        "symbol": "CL=F",
+        "price": 83.09,
+        "prev_close": 83.2,
+        "change_pct": -0.13,
+        "as_of": "2026-08-12"
+      },
+      "比特币": {
+        "symbol": "BTC-USD",
+        "price": 63294.75,
+        "prev_close": 63551.875,
+        "change_pct": -0.4,
+        "as_of": "2026-08-12"
+      }
+    },
+    "fx": {
+      "美元人民币现金": {
+        "symbol": "CNY=X",
+        "price": 6.7433,
+        "prev_close": 6.7474,
+        "change_pct": -0.06,
+        "as_of": "2026-08-12"
+      }
+    },
+    "china_macro": {
+      "PMI制造业": {
+        "value": 49.4,
+        "as_of": "2025-08-31"
+      }
+    },
+    "fetch_errors": [
+      "[中债收益率] 超时（>10.0s）",
+      "[宏观-CPI同比] 超时（>10.0s）",
+      "[宏观-M2同比] 超时（>10.0s）"
+    ],
+    "sources_used": [
+      "tencent",
+      "akshare",
+      "yfinance"
+    ]
+  }
+}
