@@ -9,125 +9,129 @@
   "success": true,
   "skipped": false,
   "error": "",
-  "snapshot_time": "2026-08-13 03:30:04",
+  "snapshot_time": "2026-08-13 11:02:24",
   "sources_used": [
     "tencent",
     "akshare",
     "yfinance"
   ],
   "fetch_errors": [
-    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
-  "finance_news_count": 4,
+  "finance_news_count": 6,
   "validation_warnings": [
     "档位 conservative 缺失或不是 dict",
     "档位 balanced 缺失或不是 dict",
     "档位 aggressive 缺失或不是 dict"
   ],
   "snapshot_data": {
-    "snapshot_time": "2026-08-13 03:30:04",
+    "snapshot_time": "2026-08-13 11:02:24",
     "a_stock": {
       "沪深300": {
         "symbol": "sh000300",
-        "price": 4690.92,
-        "prev_close": 4663.79,
-        "change_pct": 0.58,
-        "as_of": "20260812161414"
+        "price": 4716.93,
+        "prev_close": 4690.92,
+        "change_pct": 0.55,
+        "as_of": "20260813110221"
       },
       "中证500": {
         "symbol": "sh000905",
-        "price": 8045.31,
-        "prev_close": 7967.54,
-        "change_pct": 0.98,
-        "as_of": "20260812161414"
+        "price": 8115.81,
+        "prev_close": 8045.31,
+        "change_pct": 0.88,
+        "as_of": "20260813110221"
       },
       "中证1000": {
         "symbol": "sh000852",
-        "price": 7793.72,
-        "prev_close": 7698.05,
-        "change_pct": 1.24,
-        "as_of": "20260812161402"
+        "price": 7854.8,
+        "prev_close": 7793.72,
+        "change_pct": 0.78,
+        "as_of": "20260813110221"
       }
     },
     "a_stock_industry": {
       "半导体": {
         "symbol": "sh000827",
-        "price": 1748.07,
-        "prev_close": 1734.33,
-        "change_pct": 0.79,
-        "as_of": "20260812161426"
+        "price": 1749.81,
+        "prev_close": 1748.07,
+        "change_pct": 0.1,
+        "as_of": "20260813110221"
       },
       "新能源车": {
         "symbol": "sz399976",
-        "price": 3958.93,
-        "prev_close": 3937.81,
-        "change_pct": 0.54,
-        "as_of": "20260812161427"
+        "price": 3950.55,
+        "prev_close": 3958.93,
+        "change_pct": -0.21,
+        "as_of": "20260813110221"
       },
       "消费": {
         "symbol": "sh000932",
-        "price": 12823.67,
-        "prev_close": 12791.82,
-        "change_pct": 0.25,
-        "as_of": "20260812161420"
+        "price": 12867.42,
+        "prev_close": 12823.67,
+        "change_pct": 0.34,
+        "as_of": "20260813110221"
       },
       "医药": {
         "symbol": "sh000933",
-        "price": 8336.72,
-        "prev_close": 8381.43,
-        "change_pct": -0.53,
-        "as_of": "20260812161420"
+        "price": 8415.5,
+        "prev_close": 8336.72,
+        "change_pct": 0.94,
+        "as_of": "20260813110221"
       },
       "银行": {
         "symbol": "sh000934",
-        "price": 5605.77,
-        "prev_close": 5603.62,
-        "change_pct": 0.04,
-        "as_of": "20260812161420"
+        "price": 5623.54,
+        "prev_close": 5605.77,
+        "change_pct": 0.32,
+        "as_of": "20260813110221"
       },
       "高股息红利": {
         "symbol": "sh000922",
-        "price": 5513.68,
-        "prev_close": 5531.31,
-        "change_pct": -0.32,
-        "as_of": "20260812161450"
+        "price": 5482.79,
+        "prev_close": 5513.68,
+        "change_pct": -0.56,
+        "as_of": "20260813110217"
       }
     },
     "hk_stock": {
       "恒生科技": {
         "symbol": "hkHSTECH",
-        "price": 4776.44,
-        "prev_close": 4824.42,
-        "change_pct": -0.99,
-        "as_of": "2026/08/12 16:08:34"
+        "price": 4801.21,
+        "prev_close": 4776.44,
+        "change_pct": 0.52,
+        "as_of": "2026/08/13 10:47:18"
       },
       "港股高股息": {
         "symbol": "hkHSCEI",
-        "price": 8446.27,
-        "prev_close": 8528.1,
-        "change_pct": -0.96,
-        "as_of": "2026/08/12 16:08:34"
+        "price": 8448.58,
+        "prev_close": 8446.27,
+        "change_pct": 0.03,
+        "as_of": "2026/08/13 10:47:18"
       }
     },
     "us_stock": {
       "纳斯达克100": {
         "symbol": "^NDX",
-        "price": 29754.0566,
+        "price": 29742.6035,
         "prev_close": 29525.4805,
-        "change_pct": 0.77,
+        "change_pct": 0.74,
         "as_of": "2026-08-12"
       },
       "标普500": {
         "symbol": "^GSPC",
-        "price": 7751.3301,
+        "price": 7748.5,
         "prev_close": 7728.2002,
-        "change_pct": 0.3,
+        "change_pct": 0.26,
         "as_of": "2026-08-12"
       }
     },
     "bonds": {
+      "中国国债10Y": {
+        "yield_pct": 1.7141,
+        "as_of": "2026-08-12"
+      },
       "美国国债10Y": {
         "symbol": "^TNX",
         "price": 4.682,
@@ -140,44 +144,39 @@
     "commodities": {
       "黄金": {
         "symbol": "GC=F",
-        "price": 4476.3999,
+        "price": 4468.1001,
         "prev_close": 4383.0,
-        "change_pct": 2.13,
+        "change_pct": 1.94,
         "as_of": "2026-08-12"
       },
       "原油WTI": {
         "symbol": "CL=F",
-        "price": 83.09,
+        "price": 82.21,
         "prev_close": 83.2,
-        "change_pct": -0.13,
+        "change_pct": -1.19,
         "as_of": "2026-08-12"
       },
       "比特币": {
         "symbol": "BTC-USD",
-        "price": 63294.75,
+        "price": 63484.9102,
         "prev_close": 63551.875,
-        "change_pct": -0.4,
-        "as_of": "2026-08-12"
+        "change_pct": -0.11,
+        "as_of": "2026-08-13"
       }
     },
     "fx": {
       "美元人民币现金": {
         "symbol": "CNY=X",
-        "price": 6.7433,
-        "prev_close": 6.7474,
-        "change_pct": -0.06,
-        "as_of": "2026-08-12"
+        "price": 6.7434,
+        "prev_close": 6.745,
+        "change_pct": -0.02,
+        "as_of": "2026-08-13"
       }
     },
-    "china_macro": {
-      "PMI制造业": {
-        "value": 49.4,
-        "as_of": "2025-08-31"
-      }
-    },
+    "china_macro": {},
     "fetch_errors": [
-      "[中债收益率] 超时（>10.0s）",
       "[宏观-CPI同比] 超时（>10.0s）",
+      "[宏观-PMI制造业] 超时（>10.0s）",
       "[宏观-M2同比] 超时（>10.0s）"
     ],
     "sources_used": [
