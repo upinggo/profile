@@ -9,7 +9,7 @@
   "success": true,
   "skipped": false,
   "error": "",
-  "snapshot_time": "2026-08-15 09:52:44",
+  "snapshot_time": "2026-08-15 15:01:26",
   "sources_used": [
     "tencent",
     "akshare",
@@ -19,14 +19,14 @@
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
-  "finance_news_count": 8,
+  "finance_news_count": 6,
   "validation_warnings": [
     "档位 conservative 缺失或不是 dict",
     "档位 balanced 缺失或不是 dict",
     "档位 aggressive 缺失或不是 dict"
   ],
   "snapshot_data": {
-    "snapshot_time": "2026-08-15 09:52:44",
+    "snapshot_time": "2026-08-15 15:01:26",
     "a_stock": {
       "沪深300": {
         "symbol": "sh000300",
@@ -143,9 +143,9 @@
     "commodities": {
       "黄金": {
         "symbol": "GC=F",
-        "price": 4432.0,
+        "price": 4380.3999,
         "prev_close": 4363.6001,
-        "change_pct": 1.57,
+        "change_pct": 0.38,
         "as_of": "2026-08-14"
       },
       "原油WTI": {
@@ -157,18 +157,18 @@
       },
       "比特币": {
         "symbol": "BTC-USD",
-        "price": 62959.5898,
+        "price": 63048.0195,
         "prev_close": 63402.1719,
-        "change_pct": -0.7,
+        "change_pct": -0.56,
         "as_of": "2026-08-15"
       }
     },
     "fx": {
       "美元人民币现金": {
         "symbol": "CNY=X",
-        "price": 6.7407,
-        "prev_close": 6.7428,
-        "change_pct": -0.03,
+        "price": 6.7419,
+        "prev_close": 6.7433,
+        "change_pct": -0.02,
         "as_of": "2026-08-15"
       }
     },
