@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-16 15:02:41",
+  "snapshot_time": "2026-08-16 21:03:41",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -130,9 +130,9 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 62992.2109,
-      "prev_close": 62975.5938,
-      "change_pct": 0.03,
+      "price": 62948.0,
+      "prev_close": 63024.3203,
+      "change_pct": -0.12,
       "as_of": "2026-08-16"
     }
   },
@@ -140,8 +140,8 @@
     "美元人民币现金": {
       "symbol": "CNY=X",
       "price": 6.7419,
-      "prev_close": 6.7428,
-      "change_pct": -0.01,
+      "prev_close": 6.7433,
+      "change_pct": -0.02,
       "as_of": "2026-08-16"
     }
   },
