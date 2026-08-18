@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-18 21:11:38",
+  "snapshot_time": "2026-08-18 22:55:14",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,49 +86,53 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": NaN,
+      "price": 29468.6602,
       "prev_close": 30046.1406,
-      "change_pct": NaN,
-      "as_of": "2026-08-17"
+      "change_pct": -1.92,
+      "as_of": "2026-08-18"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": NaN,
+      "price": 7699.6099,
       "prev_close": 7785.7598,
-      "change_pct": NaN,
-      "as_of": "2026-08-17"
+      "change_pct": -1.11,
+      "as_of": "2026-08-18"
     }
   },
   "bonds": {
+    "中国国债10Y": {
+      "yield_pct": 1.6864,
+      "as_of": "2026-08-18"
+    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.736,
+      "price": 4.712,
       "prev_close": 4.696,
-      "change_pct": 0.85,
+      "change_pct": 0.34,
       "as_of": "2026-08-18",
-      "yield_pct": 0.474
+      "yield_pct": 0.471
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4447.3999,
+      "price": 4437.2002,
       "prev_close": 4417.7998,
-      "change_pct": 0.67,
+      "change_pct": 0.44,
       "as_of": "2026-08-18"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 84.53,
+      "price": 83.91,
       "prev_close": 84.5,
-      "change_pct": 0.04,
+      "change_pct": -0.7,
       "as_of": "2026-08-18"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 64117.7109,
+      "price": 64679.2188,
       "prev_close": 64506.2539,
-      "change_pct": -0.6,
+      "change_pct": 0.27,
       "as_of": "2026-08-18"
     }
   },
@@ -141,15 +145,10 @@
       "as_of": "2026-08-18"
     }
   },
-  "china_macro": {
-    "PMI制造业": {
-      "value": 49.4,
-      "as_of": "2025-08-31"
-    }
-  },
+  "china_macro": {},
   "fetch_errors": [
-    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
