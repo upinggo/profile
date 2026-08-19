@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-19 21:13:05",
+  "snapshot_time": "2026-08-19 22:55:17",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,66 +86,70 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29490.9609,
-      "prev_close": 29995.3809,
-      "change_pct": -1.68,
-      "as_of": "2026-08-18"
+      "price": 29495.0293,
+      "prev_close": 29490.9609,
+      "change_pct": 0.01,
+      "as_of": "2026-08-19"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7691.7598,
-      "prev_close": 7745.0601,
-      "change_pct": -0.69,
-      "as_of": "2026-08-18"
+      "price": 7733.7202,
+      "prev_close": 7691.7598,
+      "change_pct": 0.55,
+      "as_of": "2026-08-19"
     }
   },
   "bonds": {
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.653,
+      "price": 4.645,
       "prev_close": 4.706,
-      "change_pct": -1.13,
+      "change_pct": -1.3,
       "as_of": "2026-08-19",
-      "yield_pct": 0.465
+      "yield_pct": 0.464
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4488.2998,
+      "price": 4543.0,
       "prev_close": 4366.0,
-      "change_pct": 2.8,
+      "change_pct": 4.05,
       "as_of": "2026-08-19"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 84.33,
+      "price": 84.88,
       "prev_close": 84.94,
-      "change_pct": -0.72,
+      "change_pct": -0.07,
       "as_of": "2026-08-19"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 64942.7812,
+      "price": 65781.3672,
       "prev_close": 64680.7109,
-      "change_pct": 0.41,
+      "change_pct": 1.7,
       "as_of": "2026-08-19"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7213,
+      "price": 6.7171,
       "prev_close": 6.7399,
-      "change_pct": -0.28,
+      "change_pct": -0.34,
       "as_of": "2026-08-19"
     }
   },
-  "china_macro": {},
+  "china_macro": {
+    "PMI制造业": {
+      "value": 49.4,
+      "as_of": "2025-08-31"
+    }
+  },
   "fetch_errors": [
     "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
-    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
