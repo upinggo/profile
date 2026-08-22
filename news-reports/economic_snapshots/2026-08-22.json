@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-22 02:59:56",
+  "snapshot_time": "2026-08-22 09:53:43",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,29 +86,25 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29325.3516,
+      "price": 29308.8594,
       "prev_close": 29213.1602,
-      "change_pct": 0.38,
+      "change_pct": 0.33,
       "as_of": "2026-08-21"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7681.3301,
+      "price": 7674.3701,
       "prev_close": 7641.1602,
-      "change_pct": 0.53,
+      "change_pct": 0.43,
       "as_of": "2026-08-21"
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.6839,
-      "as_of": "2026-08-21"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.736,
+      "price": 4.738,
       "prev_close": 4.696,
-      "change_pct": 0.85,
+      "change_pct": 0.89,
       "as_of": "2026-08-21",
       "yield_pct": 0.474
     }
@@ -116,24 +112,24 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4682.2002,
+      "price": 4661.6001,
       "prev_close": 4516.2998,
-      "change_pct": 3.67,
+      "change_pct": 3.22,
       "as_of": "2026-08-21"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 86.97,
+      "price": 86.64,
       "prev_close": 87.83,
-      "change_pct": -0.98,
+      "change_pct": -1.35,
       "as_of": "2026-08-21"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 77098.8516,
+      "price": 77874.0312,
       "prev_close": 73032.7578,
-      "change_pct": 5.57,
-      "as_of": "2026-08-21"
+      "change_pct": 6.63,
+      "as_of": "2026-08-22"
     }
   },
   "fx": {
@@ -145,10 +141,15 @@
       "as_of": "2026-08-21"
     }
   },
-  "china_macro": {},
+  "china_macro": {
+    "PMI制造业": {
+      "value": 49.4,
+      "as_of": "2025-08-31"
+    }
+  },
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
-    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
