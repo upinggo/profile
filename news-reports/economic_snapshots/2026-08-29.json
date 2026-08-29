@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-08-29 10:50:45",
+  "snapshot_time": "2026-08-29 19:09:59",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,16 +86,16 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29433.4277,
+      "price": NaN,
       "prev_close": 29641.5605,
-      "change_pct": -0.7,
+      "change_pct": NaN,
       "as_of": "2026-08-28"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7711.7598,
+      "price": NaN,
       "prev_close": 7730.9902,
-      "change_pct": -0.25,
+      "change_pct": NaN,
       "as_of": "2026-08-28"
     }
   },
@@ -106,40 +106,40 @@
     },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 4.72,
-      "prev_close": 4.672,
-      "change_pct": 1.03,
-      "as_of": "2026-08-28",
-      "yield_pct": 0.472
+      "price": 4.672,
+      "prev_close": 4.664,
+      "change_pct": 0.17,
+      "as_of": "2026-08-27",
+      "yield_pct": 0.467
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4504.1001,
+      "price": NaN,
       "prev_close": 4609.7002,
-      "change_pct": -2.29,
+      "change_pct": NaN,
       "as_of": "2026-08-28"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 83.44,
+      "price": NaN,
       "prev_close": 83.53,
-      "change_pct": -0.11,
+      "change_pct": NaN,
       "as_of": "2026-08-28"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 77626.5781,
+      "price": 77673.5078,
       "prev_close": 80257.5391,
-      "change_pct": -3.28,
+      "change_pct": -3.22,
       "as_of": "2026-08-29"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7208,
+      "price": 6.7205,
       "prev_close": 6.7225,
       "change_pct": -0.03,
       "as_of": "2026-08-29"
