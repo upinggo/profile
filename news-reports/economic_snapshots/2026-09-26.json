@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-26 02:41:44",
+  "snapshot_time": "2026-09-26 07:20:32",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,53 +86,49 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 30607.877,
+      "price": 30608.1348,
       "prev_close": 30478.8594,
       "change_pct": 0.42,
       "as_of": "2026-09-25"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7739.1899,
+      "price": 7743.4102,
       "prev_close": 7704.1299,
-      "change_pct": 0.46,
+      "change_pct": 0.51,
       "as_of": "2026-09-25"
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.6738,
-      "as_of": "2026-09-24"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 5.204,
+      "price": 5.184,
       "prev_close": 5.162,
-      "change_pct": 0.81,
+      "change_pct": 0.43,
       "as_of": "2026-09-25",
-      "yield_pct": 0.52
+      "yield_pct": 0.518
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4325.3999,
+      "price": 4320.5,
       "prev_close": 4298.0,
-      "change_pct": 0.64,
+      "change_pct": 0.52,
       "as_of": "2026-09-25"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 92.15,
+      "price": 92.44,
       "prev_close": 94.61,
-      "change_pct": -2.6,
+      "change_pct": -2.29,
       "as_of": "2026-09-25"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 83938.5938,
+      "price": 84062.5391,
       "prev_close": 84379.0625,
-      "change_pct": -0.52,
+      "change_pct": -0.38,
       "as_of": "2026-09-25"
     }
   },
@@ -147,6 +143,7 @@
   },
   "china_macro": {},
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
