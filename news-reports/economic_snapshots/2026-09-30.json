@@ -1,92 +1,92 @@
 {
-  "snapshot_time": "2026-09-30 06:21:15",
+  "snapshot_time": "2026-09-30 13:39:53",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
-      "price": 4345.21,
-      "prev_close": 4340.76,
-      "change_pct": 0.1,
-      "as_of": "20260929161412"
+      "price": 4365.42,
+      "prev_close": 4345.21,
+      "change_pct": 0.47,
+      "as_of": "20260930133951"
     },
     "中证500": {
       "symbol": "sh000905",
-      "price": 7439.63,
-      "prev_close": 7402.3,
-      "change_pct": 0.5,
-      "as_of": "20260929161412"
+      "price": 7459.81,
+      "prev_close": 7439.63,
+      "change_pct": 0.27,
+      "as_of": "20260930133951"
     },
     "中证1000": {
       "symbol": "sh000852",
-      "price": 7325.35,
-      "prev_close": 7294.17,
-      "change_pct": 0.43,
-      "as_of": "20260929161500"
+      "price": 7331.56,
+      "prev_close": 7325.35,
+      "change_pct": 0.08,
+      "as_of": "20260930133951"
     }
   },
   "a_stock_industry": {
     "半导体": {
       "symbol": "sh000827",
-      "price": 1544.13,
-      "prev_close": 1535.92,
-      "change_pct": 0.53,
-      "as_of": "20260929161424"
+      "price": 1557.71,
+      "prev_close": 1544.13,
+      "change_pct": 0.88,
+      "as_of": "20260930133951"
     },
     "新能源车": {
       "symbol": "sz399976",
-      "price": 3402.33,
-      "prev_close": 3372.36,
+      "price": 3432.49,
+      "prev_close": 3402.33,
       "change_pct": 0.89,
-      "as_of": "20260929161400"
+      "as_of": "20260930133951"
     },
     "消费": {
       "symbol": "sh000932",
-      "price": 12107.17,
-      "prev_close": 12096.02,
-      "change_pct": 0.09,
-      "as_of": "20260929161418"
+      "price": 12275.5,
+      "prev_close": 12107.17,
+      "change_pct": 1.39,
+      "as_of": "20260930133951"
     },
     "医药": {
       "symbol": "sh000933",
-      "price": 7786.23,
-      "prev_close": 7770.69,
-      "change_pct": 0.2,
-      "as_of": "20260929161418"
+      "price": 8013.73,
+      "prev_close": 7786.23,
+      "change_pct": 2.92,
+      "as_of": "20260930133951"
     },
     "银行": {
       "symbol": "sh000934",
-      "price": 5628.93,
-      "prev_close": 5615.73,
-      "change_pct": 0.24,
-      "as_of": "20260929161418"
+      "price": 5692.77,
+      "prev_close": 5628.93,
+      "change_pct": 1.13,
+      "as_of": "20260930133951"
     },
     "高股息红利": {
       "symbol": "sh000922",
-      "price": 5428.67,
-      "prev_close": 5439.6,
-      "change_pct": -0.2,
-      "as_of": "20260929161449"
+      "price": 5500.95,
+      "prev_close": 5428.67,
+      "change_pct": 1.33,
+      "as_of": "20260930133937"
     }
   },
   "hk_stock": {
     "恒生科技": {
       "symbol": "hkHSTECH",
-      "price": 4249.62,
-      "prev_close": 4296.0,
-      "change_pct": -1.08,
-      "as_of": "2026/09/29 16:08:26"
+      "price": 4235.79,
+      "prev_close": 4249.62,
+      "change_pct": -0.33,
+      "as_of": "2026/09/30 13:24:48"
     },
     "港股高股息": {
       "symbol": "hkHSCEI",
-      "price": 8178.81,
-      "prev_close": 8216.84,
-      "change_pct": -0.46,
-      "as_of": "2026/09/29 16:08:26"
+      "price": 8191.97,
+      "prev_close": 8178.81,
+      "change_pct": 0.16,
+      "as_of": "2026/09/30 13:24:48"
     }
   },
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 30339.332,
+      "price": 30339.3301,
       "prev_close": 30276.8105,
       "change_pct": 0.21,
       "as_of": "2026-09-29"
@@ -116,33 +116,33 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4215.0,
-      "prev_close": 4168.3999,
-      "change_pct": 1.12,
-      "as_of": "2026-09-29"
+      "price": 4206.2002,
+      "prev_close": 4179.7002,
+      "change_pct": 0.63,
+      "as_of": "2026-09-30"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 88.63,
-      "prev_close": 92.6,
-      "change_pct": -4.29,
-      "as_of": "2026-09-29"
+      "price": 89.68,
+      "prev_close": 89.38,
+      "change_pct": 0.34,
+      "as_of": "2026-09-30"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 83583.3438,
+      "price": 83414.1875,
       "prev_close": 83502.6094,
-      "change_pct": 0.1,
-      "as_of": "2026-09-29"
+      "change_pct": -0.11,
+      "as_of": "2026-09-30"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.7025,
-      "prev_close": 6.7128,
-      "change_pct": -0.15,
-      "as_of": "2026-09-29"
+      "price": 6.7035,
+      "prev_close": 6.7103,
+      "change_pct": -0.1,
+      "as_of": "2026-09-30"
     }
   },
   "china_macro": {},
