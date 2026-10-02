@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-02 13:47:46",
+  "snapshot_time": "2026-10-02 20:45:42",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -70,17 +70,17 @@
   "hk_stock": {
     "恒生科技": {
       "symbol": "hkHSTECH",
-      "price": 4143.13,
+      "price": 4157.94,
       "prev_close": 4253.89,
-      "change_pct": -2.6,
-      "as_of": "2026/10/02 13:32:46"
+      "change_pct": -2.26,
+      "as_of": "2026/10/02 16:08:32"
     },
     "港股高股息": {
       "symbol": "hkHSCEI",
-      "price": 8026.78,
+      "price": 8030.54,
       "prev_close": 8220.08,
-      "change_pct": -2.35,
-      "as_of": "2026/10/02 13:32:46"
+      "change_pct": -2.31,
+      "as_of": "2026/10/02 16:08:32"
     }
   },
   "us_stock": {
@@ -106,33 +106,33 @@
     },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 5.237,
-      "prev_close": 5.293,
-      "change_pct": -1.06,
-      "as_of": "2026-10-01",
-      "yield_pct": 0.524
+      "price": 5.17,
+      "prev_close": 5.237,
+      "change_pct": -1.28,
+      "as_of": "2026-10-02",
+      "yield_pct": 0.517
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4219.5,
+      "price": 4250.6001,
       "prev_close": 4202.2998,
-      "change_pct": 0.41,
+      "change_pct": 1.15,
       "as_of": "2026-10-02"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 92.49,
+      "price": 89.29,
       "prev_close": 92.87,
-      "change_pct": -0.41,
+      "change_pct": -3.85,
       "as_of": "2026-10-02"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 86066.1875,
-      "prev_close": 83553.8516,
-      "change_pct": 3.01,
+      "price": 86615.4062,
+      "prev_close": 84853.1016,
+      "change_pct": 2.08,
       "as_of": "2026-10-02"
     }
   },
