@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-04 05:23:46",
+  "snapshot_time": "2026-10-04 16:31:21",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -100,10 +100,6 @@
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": NaN,
-      "as_of": "2026-10-02"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
       "price": 5.277,
@@ -130,29 +126,26 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 84708.2891,
-      "prev_close": 84497.2109,
-      "change_pct": 0.25,
-      "as_of": "2026-10-03"
+      "price": 85055.1875,
+      "prev_close": 84763.5781,
+      "change_pct": 0.34,
+      "as_of": "2026-10-04"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6987,
+      "price": 6.7048,
       "prev_close": 6.7045,
-      "change_pct": -0.09,
-      "as_of": "2026-10-03"
+      "change_pct": 0.0,
+      "as_of": "2026-10-04"
     }
   },
-  "china_macro": {
-    "PMI制造业": {
-      "value": 49.4,
-      "as_of": "2025-08-31"
-    }
-  },
+  "china_macro": {},
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
+    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
