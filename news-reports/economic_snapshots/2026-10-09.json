@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-09 03:59:36",
+  "snapshot_time": "2026-10-09 08:26:47",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -93,13 +93,17 @@
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7765.48,
+      "price": 7765.3599,
       "prev_close": 7801.77,
       "change_pct": -0.47,
       "as_of": "2026-10-08"
     }
   },
   "bonds": {
+    "中国国债10Y": {
+      "yield_pct": 1.6899,
+      "as_of": "2026-10-08"
+    },
     "美国国债10Y": {
       "symbol": "^TNX",
       "price": 5.231,
@@ -112,32 +116,32 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4154.5,
+      "price": 4173.3999,
       "prev_close": 4140.7002,
-      "change_pct": 0.33,
+      "change_pct": 0.79,
       "as_of": "2026-10-08"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 91.22,
+      "price": 91.11,
       "prev_close": 88.28,
-      "change_pct": 3.33,
+      "change_pct": 3.21,
       "as_of": "2026-10-08"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 81745.9375,
+      "price": 81673.1719,
       "prev_close": 83275.9297,
-      "change_pct": -1.84,
-      "as_of": "2026-10-08"
+      "change_pct": -1.92,
+      "as_of": "2026-10-09"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6938,
+      "price": 6.7045,
       "prev_close": 6.7045,
-      "change_pct": -0.16,
+      "change_pct": 0.0,
       "as_of": "2026-10-08"
     }
   },
@@ -148,7 +152,6 @@
     }
   },
   "fetch_errors": [
-    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
