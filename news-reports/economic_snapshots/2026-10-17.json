@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-17 15:02:02",
+  "snapshot_time": "2026-10-17 20:14:44",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -126,9 +126,9 @@
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 81516.5234,
-      "prev_close": 82141.4609,
-      "change_pct": -0.76,
+      "price": 81424.3125,
+      "prev_close": 81500.8047,
+      "change_pct": -0.09,
       "as_of": "2026-10-17"
     }
   },
