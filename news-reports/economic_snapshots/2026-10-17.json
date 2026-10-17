@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-17 02:07:42",
+  "snapshot_time": "2026-10-17 08:33:06",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,25 +86,25 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29243.1152,
+      "price": 29187.5488,
       "prev_close": 29935.5996,
-      "change_pct": -2.31,
+      "change_pct": -2.5,
       "as_of": "2026-10-16"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7656.7002,
+      "price": 7659.4399,
       "prev_close": 7744.0601,
-      "change_pct": -1.13,
+      "change_pct": -1.09,
       "as_of": "2026-10-16"
     }
   },
   "bonds": {
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 5.102,
+      "price": 5.098,
       "prev_close": 5.089,
-      "change_pct": 0.26,
+      "change_pct": 0.18,
       "as_of": "2026-10-16",
       "yield_pct": 0.51
     }
@@ -112,40 +112,44 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4183.2998,
+      "price": 4186.7002,
       "prev_close": 4170.1001,
-      "change_pct": 0.32,
+      "change_pct": 0.4,
       "as_of": "2026-10-16"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 98.67,
+      "price": 99.04,
       "prev_close": 97.97,
-      "change_pct": 0.71,
+      "change_pct": 1.09,
       "as_of": "2026-10-16"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 81158.4766,
+      "price": 81525.9531,
       "prev_close": 82141.4609,
-      "change_pct": -1.2,
-      "as_of": "2026-10-16"
+      "change_pct": -0.75,
+      "as_of": "2026-10-17"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.676,
+      "price": 6.6768,
       "prev_close": 6.6926,
-      "change_pct": -0.25,
+      "change_pct": -0.24,
       "as_of": "2026-10-16"
     }
   },
-  "china_macro": {},
+  "china_macro": {
+    "PMI制造业": {
+      "value": 49.4,
+      "as_of": "2025-08-31"
+    }
+  },
   "fetch_errors": [
     "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
-    "[宏观-PMI制造业] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
   "sources_used": [
