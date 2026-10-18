@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-18 02:33:19",
+  "snapshot_time": "2026-10-18 12:41:49",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -100,10 +100,6 @@
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.648,
-      "as_of": "2026-10-16"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
       "price": 5.098,
@@ -123,26 +119,26 @@
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 101.41,
+      "price": 99.02,
       "prev_close": 97.97,
-      "change_pct": 3.51,
+      "change_pct": 1.07,
       "as_of": "2026-10-16"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 81439.6172,
+      "price": 81695.4766,
       "prev_close": 81500.8047,
-      "change_pct": -0.08,
-      "as_of": "2026-10-17"
+      "change_pct": 0.24,
+      "as_of": "2026-10-18"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6768,
+      "price": 6.6862,
       "prev_close": 6.6909,
-      "change_pct": -0.21,
-      "as_of": "2026-10-17"
+      "change_pct": -0.07,
+      "as_of": "2026-10-18"
     }
   },
   "china_macro": {
@@ -152,6 +148,7 @@
     }
   },
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
