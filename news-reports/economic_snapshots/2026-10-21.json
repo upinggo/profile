@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-21 01:16:21",
+  "snapshot_time": "2026-10-21 05:41:55",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -86,62 +86,58 @@
   "us_stock": {
     "纳斯达克100": {
       "symbol": "^NDX",
-      "price": 29541.3633,
+      "price": 29490.2832,
       "prev_close": 29529.3496,
-      "change_pct": 0.04,
+      "change_pct": -0.13,
       "as_of": "2026-10-20"
     },
     "标普500": {
       "symbol": "^GSPC",
-      "price": 7714.0801,
+      "price": 7712.5698,
       "prev_close": 7690.73,
-      "change_pct": 0.3,
+      "change_pct": 0.28,
       "as_of": "2026-10-20"
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.6354,
-      "as_of": "2026-10-20"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
-      "price": 5.134,
+      "price": 5.117,
       "prev_close": 5.136,
-      "change_pct": -0.04,
+      "change_pct": -0.37,
       "as_of": "2026-10-20",
-      "yield_pct": 0.513
+      "yield_pct": 0.512
     }
   },
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4137.7998,
+      "price": 4142.5,
       "prev_close": 4160.1001,
-      "change_pct": -0.54,
+      "change_pct": -0.42,
       "as_of": "2026-10-20"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 98.04,
+      "price": 98.18,
       "prev_close": 103.66,
-      "change_pct": -5.42,
+      "change_pct": -5.29,
       "as_of": "2026-10-20"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 82693.8828,
+      "price": 82774.3125,
       "prev_close": 81853.5391,
-      "change_pct": 1.03,
+      "change_pct": 1.12,
       "as_of": "2026-10-20"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6665,
+      "price": 6.6774,
       "prev_close": 6.6909,
-      "change_pct": -0.36,
+      "change_pct": -0.2,
       "as_of": "2026-10-20"
     }
   },
@@ -152,6 +148,7 @@
     }
   },
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
