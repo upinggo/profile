@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-11-07 05:34:33",
+  "snapshot_time": "2026-11-07 09:59:26",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
@@ -112,32 +112,32 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 4072.7,
+      "price": 4079.5,
       "prev_close": 4113.5,
-      "change_pct": -0.99,
+      "change_pct": -0.83,
       "as_of": "2026-11-06"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 90.51,
+      "price": 90.34,
       "prev_close": 90.52,
-      "change_pct": -0.01,
+      "change_pct": -0.2,
       "as_of": "2026-11-06"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 75637.0703,
+      "price": 75956.3281,
       "prev_close": 75942.125,
-      "change_pct": -0.4,
-      "as_of": "2026-11-06"
+      "change_pct": 0.02,
+      "as_of": "2026-11-07"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6648,
+      "price": 6.688,
       "prev_close": 6.6731,
-      "change_pct": -0.12,
+      "change_pct": 0.22,
       "as_of": "2026-11-06"
     }
   },
