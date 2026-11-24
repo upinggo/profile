@@ -1,86 +1,86 @@
 {
-  "snapshot_time": "2026-11-24 10:56:19",
+  "snapshot_time": "2026-11-24 12:26:25",
   "a_stock": {
     "沪深300": {
       "symbol": "sh000300",
-      "price": 3990.81,
+      "price": 3980.91,
       "prev_close": 3958.29,
-      "change_pct": 0.82,
-      "as_of": "20261124105618"
+      "change_pct": 0.57,
+      "as_of": "20261124120500"
     },
     "中证500": {
       "symbol": "sh000905",
-      "price": 6221.95,
+      "price": 6179.76,
       "prev_close": 6128.99,
-      "change_pct": 1.52,
-      "as_of": "20261124105618"
+      "change_pct": 0.83,
+      "as_of": "20261124120500"
     },
     "中证1000": {
       "symbol": "sh000852",
-      "price": 5915.41,
+      "price": 5855.96,
       "prev_close": 5812.32,
-      "change_pct": 1.77,
-      "as_of": "20261124105618"
+      "change_pct": 0.75,
+      "as_of": "20261124120500"
     }
   },
   "a_stock_industry": {
     "半导体": {
       "symbol": "sh000827",
-      "price": 1381.35,
+      "price": 1370.92,
       "prev_close": 1356.9,
-      "change_pct": 1.8,
-      "as_of": "20261124105618"
+      "change_pct": 1.03,
+      "as_of": "20261124120500"
     },
     "新能源车": {
       "symbol": "sz399976",
-      "price": 2951.28,
+      "price": 2923.7,
       "prev_close": 2905.43,
-      "change_pct": 1.58,
-      "as_of": "20261124105615"
+      "change_pct": 0.63,
+      "as_of": "20261124120536"
     },
     "消费": {
       "symbol": "sh000932",
-      "price": 13166.11,
+      "price": 13147.89,
       "prev_close": 13175.44,
-      "change_pct": -0.07,
-      "as_of": "20261124105618"
+      "change_pct": -0.21,
+      "as_of": "20261124120500"
     },
     "医药": {
       "symbol": "sh000933",
-      "price": 7589.38,
+      "price": 7574.2,
       "prev_close": 7622.1,
-      "change_pct": -0.43,
-      "as_of": "20261124105618"
+      "change_pct": -0.63,
+      "as_of": "20261124120500"
     },
     "银行": {
       "symbol": "sh000934",
-      "price": 5809.75,
+      "price": 5819.9,
       "prev_close": 5827.02,
-      "change_pct": -0.3,
-      "as_of": "20261124105618"
+      "change_pct": -0.12,
+      "as_of": "20261124120500"
     },
     "高股息红利": {
       "symbol": "sh000922",
-      "price": 5452.28,
+      "price": 5453.31,
       "prev_close": 5492.17,
-      "change_pct": -0.73,
-      "as_of": "20261124105604"
+      "change_pct": -0.71,
+      "as_of": "20261124120549"
     }
   },
   "hk_stock": {
     "恒生科技": {
       "symbol": "hkHSTECH",
-      "price": 3514.75,
+      "price": 3473.44,
       "prev_close": 3508.0,
-      "change_pct": 0.19,
-      "as_of": "2026/11/24 10:41:14"
+      "change_pct": -0.99,
+      "as_of": "2026/11/24 11:59:59"
     },
     "港股高股息": {
       "symbol": "hkHSCEI",
-      "price": 7526.75,
+      "price": 7467.74,
       "prev_close": 7527.98,
-      "change_pct": -0.02,
-      "as_of": "2026/11/24 10:41:14"
+      "change_pct": -0.8,
+      "as_of": "2026/11/24 11:59:59"
     }
   },
   "us_stock": {
@@ -100,10 +100,6 @@
     }
   },
   "bonds": {
-    "中国国债10Y": {
-      "yield_pct": 1.5861,
-      "as_of": "2026-11-23"
-    },
     "美国国债10Y": {
       "symbol": "^TNX",
       "price": 4.918,
@@ -116,30 +112,30 @@
   "commodities": {
     "黄金": {
       "symbol": "GC=F",
-      "price": 3641.7,
+      "price": 3630.8,
       "prev_close": 3515.3999,
-      "change_pct": 3.59,
+      "change_pct": 3.28,
       "as_of": "2026-11-23"
     },
     "原油WTI": {
       "symbol": "CL=F",
-      "price": 79.9,
+      "price": 79.8,
       "prev_close": 83.98,
-      "change_pct": -4.86,
+      "change_pct": -4.98,
       "as_of": "2026-11-23"
     },
     "比特币": {
       "symbol": "BTC-USD",
-      "price": 60029.6406,
+      "price": 60451.7812,
       "prev_close": 61161.9102,
-      "change_pct": -1.85,
+      "change_pct": -1.16,
       "as_of": "2026-11-24"
     }
   },
   "fx": {
     "美元人民币现金": {
       "symbol": "CNY=X",
-      "price": 6.6603,
+      "price": 6.6606,
       "prev_close": 6.677,
       "change_pct": -0.25,
       "as_of": "2026-11-24"
@@ -152,6 +148,7 @@
     }
   },
   "fetch_errors": [
+    "[中债收益率] 超时（>10.0s）",
     "[宏观-CPI同比] 超时（>10.0s）",
     "[宏观-M2同比] 超时（>10.0s）"
   ],
